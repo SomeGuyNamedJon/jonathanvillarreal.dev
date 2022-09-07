@@ -1,0 +1,27 @@
+[
+{
+    "name" : "About",
+    "icon" : "fa-user-graduate",
+    "function" : "updateContent('home')"
+},
+{
+    "name" : "School",
+    "icon" : "fa-graduation-cap",
+    "function" : "updateContent('school')"
+},
+{
+    "name" : "Work",
+    "icon" : "fa-briefcase",
+    "function" : "updateContent('work')"
+},
+{
+    "name" : "Contact",
+    "icon" : "fa-address-book",
+    "function" : "updateContent('contact')"
+},
+{
+    "name" : "Comments",
+    "icon" : "fa-comments",
+    "function" : "updateContent('comments')"
+}
+]
