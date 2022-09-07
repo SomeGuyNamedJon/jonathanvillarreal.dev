@@ -1,27 +1,27 @@
 [
 {
     "name" : "About",
-    "icon" : "fa-user-graduate",
+    "icon" : "user-graduate",
     "function" : "updateContent('home')"
 },
 {
     "name" : "School",
-    "icon" : "fa-graduation-cap",
+    "icon" : "graduation-cap",
     "function" : "updateContent('school')"
 },
 {
     "name" : "Work",
-    "icon" : "fa-briefcase",
+    "icon" : "briefcase",
     "function" : "updateContent('work')"
 },
 {
     "name" : "Contact",
-    "icon" : "fa-address-book",
+    "icon" : "address-book",
     "function" : "updateContent('contact')"
 },
 {
     "name" : "Comments",
-    "icon" : "fa-comments",
+    "icon" : "comments",
     "function" : "updateContent('comments')"
 }
 ]
