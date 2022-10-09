@@ -2,26 +2,26 @@
 {
     "name" : "About",
     "icon" : "user-graduate",
-    "function" : "updateContent('home')"
+    "page" : "home"
 },
 {
     "name" : "School",
     "icon" : "graduation-cap",
-    "function" : "updateContent('school')"
+    "page" : "school"
 },
 {
     "name" : "Work",
     "icon" : "briefcase",
-    "function" : "updateContent('work')"
+    "page" : "work"
 },
 {
     "name" : "Contact",
     "icon" : "address-book",
-    "function" : "updateContent('contact')"
+    "page" : "contact"
 },
 {
     "name" : "Comments",
     "icon" : "comments",
-    "function" : "updateContent('comments')"
+    "page" : "comments"
 }
 ]

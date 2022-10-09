@@ -1,33 +1,66 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import NavBar from './components/NavBar.vue';
+  import NavBar from '@/components/NavBar.vue'
 </script>
 
 <template>
-  <NavBar/>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+ <div class="PageView">
+  <div class="PageTitle">
+    <h1>Jonathan Villarreal</h1>
   </div>
-  <HelloWorld msg="Jonathan's Github.io : UNDER CONSTRUCTION" />
+  <NavBar/>
+  <div class="RouterView">
+    <RouterView/>
+  </div>
+ </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+<style>
+.PageView {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: .5fr .25fr 4fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "PageTitle"
+    "NavBar"
+    "RouterView";
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.RouterView {
+  grid-area: RouterView;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.PageTitle {
+  grid-area: PageTitle;
+  color:#4f3789;
+}
+
+.NavBar {
+  grid-area: NavBar;
+  display: block;
+  background-color: #673ab7;
+  border-radius: 25px;
+}
+
+.NavLink {
+  display: inline-block;
+  text-align: center;
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  width: 10vw;
+  padding: .125vw;
+  margin-inline-end: .5vw;
+  border-radius: 25px;
+}
+
+.NavLink:hover{
+  background-color: #4f3789;
+}
+
+.NavLink.active {
+  font-weight: bolder;
+  text-shadow: 2px 2px #444;
+  background-color: #845fda;
 }
 </style>
