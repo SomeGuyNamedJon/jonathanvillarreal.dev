@@ -5,7 +5,7 @@ const routes = [
     {path: '/school', name: 'school', component: () => import('@/pages/School.vue')},
     {path: '/work', name: 'work', component: () => import('@/pages/Work.vue')},
     {path: '/contact', name: 'contact', component: () => import('@/pages/Contact.vue')},
-    {path: '/comments', name: 'comments', component: () => import('@/pages/Comments.vue')},
+    {path: '/projects', name: 'projects', component: () => import('@/pages/Projects.vue')},
 ]
 
 const router = createRouter({

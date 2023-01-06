@@ -1,27 +1,27 @@
 [
 {
-    "name" : "About",
-    "icon" : "user-graduate",
+    "name" : "About Me",
+    "icon" : "user",
     "page" : "home"
 },
 {
-    "name" : "School",
+    "name" : "Education",
     "icon" : "graduation-cap",
     "page" : "school"
 },
 {
-    "name" : "Work",
+    "name" : "Work History",
     "icon" : "briefcase",
     "page" : "work"
+},
+{
+    "name" : "Projects",
+    "icon" : "code-fork",
+    "page" : "projects"
 },
 {
     "name" : "Contact",
     "icon" : "address-book",
     "page" : "contact"
-},
-{
-    "name" : "Comments",
-    "icon" : "comments",
-    "page" : "comments"
 }
 ]
