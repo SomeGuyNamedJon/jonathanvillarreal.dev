@@ -68,12 +68,13 @@ button:focus-visible {
 .card {
   padding: 2em;
 }
-
 #app {
-  max-width: 1280px;
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
   text-align: center;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: light) {

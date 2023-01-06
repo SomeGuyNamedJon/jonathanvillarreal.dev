@@ -36,6 +36,7 @@
 }
 
 .NavBar {
+  width: 100vw;
   grid-area: NavBar;
   display: block;
   background-color: #673ab7;
@@ -58,7 +59,7 @@
   background-color: #4f3789;
 }
 
-.NavLink.active {
+.NavLink.router-link-active {
   font-weight: bolder;
   text-shadow: 2px 2px #444;
   background-color: #845fda;
