@@ -15,6 +15,7 @@
 
 <template>
     <div class="NavBar">
+        <div class="NavHeader">Jonathan Villarreal</div>
         <NavLink v-for="data in navJSON" :page="data.page" :icon="data.icon" :name="data.name"/>
     </div>
 </template>
