@@ -1,27 +1,27 @@
-[
 {
+"home" : {
     "name" : "About Me",
     "icon" : "user",
     "page" : "home"
 },
-{
+"school" : {
     "name" : "Education",
     "icon" : "graduation-cap",
     "page" : "school"
 },
-{
+"work" : {
     "name" : "Work History",
-    "icon" : "briefcase",
+    "icon" : "building",
     "page" : "work"
 },
-{
+"projects" : {
     "name" : "Projects",
     "icon" : "code-fork",
     "page" : "projects"
 },
-{
-    "name" : "Contact",
-    "icon" : "address-book",
+"contact" : {
+    "name" : "Contact Me",
+    "icon" : "at",
     "page" : "contact"
 }
-]
+}

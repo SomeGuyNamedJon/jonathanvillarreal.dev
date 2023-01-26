@@ -17,7 +17,7 @@
 </script>
 
 <template>
-    <RouterLink class="NavLink" :to="{name: page}">
+    <RouterLink class="navLink" :to="{name: page}">
             <font-awesome-icon :icon="icon"/> {{name}}
     </RouterLink> 
 </template>

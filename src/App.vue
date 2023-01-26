@@ -30,41 +30,4 @@
   grid-area: PageTitle;
   color:#4f3789;
 }
-
-.NavBar {
-  position: relative;
-  width: 100vw;
-  height: 2em;
-  grid-area: NavBar;
-  background-color: #673ab7;
-  margin-bottom: 5vh;
-}
-
-.NavHeader {
-  position: absolute;
-  width: fit-content;
-  text-align: left;
-}
-
-.NavLink {
-  display: inline-block;
-  text-align: center;
-  color: white !important;
-  font-weight: bold;
-  text-decoration: none;
-  width: 10vw;
-  height: 100%;
-  padding-top: .25em;
-  border-radius: 0% 0% 10% 10%;
-}
-
-.NavLink:hover{
-  background-color: #4f3789;
-}
-
-.NavLink.router-link-active {
-  font-weight: bolder;
-  text-shadow: 2px 2px #444;
-  background-color: #845fda;
-}
 </style>
