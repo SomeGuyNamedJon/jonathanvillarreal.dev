@@ -63,9 +63,10 @@
     color: white !important;
     font-weight: bold;
     text-decoration: none;
-    width: 10vw;
+    min-width: fit-content;
     height: 100%;
     padding-top: .25em;
+    padding-inline: 1em;
     border-radius: 0% 0% 10% 10%;
 }
 
