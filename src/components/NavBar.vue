@@ -1,6 +1,6 @@
 
 <script>
-    import json from '@/assets/navbar.json'
+    import json from '@/assets/json/navbar.json'
     import NavLink from '@/components/NavLink.vue'
     import { computed } from '@vue/reactivity'
     import { useRoute } from 'vue-router'
