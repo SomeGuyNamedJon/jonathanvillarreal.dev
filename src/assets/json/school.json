@@ -1,6 +1,6 @@
 [
 {
-    "school":"Theodore Roosevelt High School, TX",
+    "school":"Theodore Roosevelt High School",
     "logo":"Roosevelt.png",
     "graduated":"Jun 2013",
     "degree":"High School Diploma",
@@ -11,7 +11,7 @@
     }
 },
 {
-    "school":"San Antonio College, TX",
+    "school":"San Antonio College",
     "logo":"SAC.png",
     "graduated":"May 2017",
     "degree":"Associate of Applied Science in Computer Programming",
@@ -23,7 +23,7 @@
     }
 },
 {
-    "school":"UTSA, TX",
+    "school":"University of Texas at San Antonio",
     "logo":"UTSA.png",
     "graduated":"May 2022",
     "degree":"Bachelor's of Computer Science",
