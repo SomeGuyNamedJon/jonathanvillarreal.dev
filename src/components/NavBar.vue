@@ -67,7 +67,6 @@
     height: 100%;
     padding-top: .25em;
     padding-inline: 1em;
-    border-radius: 0% 0% 10% 10%;
 }
 
 .navLink:hover{
@@ -76,7 +75,6 @@
 
 .navLink.router-link-active {
     font-weight: bolder;
-    text-shadow: 2px 2px #444;
     background-color: #845fda;
 }
 .coverBar {
@@ -90,7 +88,8 @@
 }
 .currentPage {
     position: relative;
-    left: 5%;
+    left: 15px;
+    padding-top: 3px;
     color:#f0f0f0 !important;
     font-size: larger;
     font-weight: bold;
@@ -114,6 +113,7 @@
 #MenuIcon {
     position: relative;
     right: 25%;
+    padding-top: 4px;
 }
 #check{
     display: none;
@@ -131,7 +131,7 @@
     .navLink {
         display: flex;
         text-align: justify;
-        padding-inline-start: 5%;
+        padding-inline-start: 0%;
         visibility: collapse;
         flex-direction: row;
     }
@@ -161,6 +161,9 @@
     }
     .shown.navContainer{
         height: max-content;
+    }
+    .icon{
+        min-width: 45px;
     } 
 }
 </style>
