@@ -1,0 +1,36 @@
+[
+{
+    "school":"Theodore Roosevelt High School, TX",
+    "logo":"Roosevelt.png",
+    "graduated":"Jun 2013",
+    "degree":"High School Diploma",
+    "gpa":"ETA Program",
+    "blurbs":{
+        "Relevant Courses":"Engineering Principles, Engineering Design and Presentation, Computer Programming, Engineering Mathematics, Graphic Design",
+        "Awards":"\"Outstanding Student Computer Programming\" - Plaque"
+    }
+},
+{
+    "school":"San Antonio College, TX",
+    "logo":"SAC.png",
+    "graduated":"May 2017",
+    "degree":"Associate of Applied Science in Computer Programming",
+    "gpa":"3.236 GPA",
+    "blurbs":{
+        "Relevant Courses":"Programming Logic and Design, Introduction to PC Operating Systems, Cisco Exploration I: Network Fundamentals, Introduction to Oracle SQL, Linux Installation & Configuration, Personal Computer Hardware, Information Technology Security, Comprehensive Software Project: Planning & Design, Advanced C++ Programming, Advanced Java Programming, Advanced Web Programming, Unix Operating System I",
+        "Marketable Skills Awards":"Java Programming, Web Programming, CompTIA Security +",
+        "Certificates":"Computer Programming Intermediate Level I"
+    }
+},
+{
+    "school":"UTSA, TX",
+    "logo":"UTSA.png",
+    "graduated":"May 2022",
+    "degree":"Bachelor's of Computer Science",
+    "gpa":"3.31 GPA",
+    "blurbs":{
+        "Relevant Courses":"Intro to Computer Programming II, Calculus I, Calculus II, Discrete Mathematical Structures, Data Structures, Systems Programming, Application Programming, Math Foundations of CS, Computer Organization, Principles of Cyber Security, Game Development, Programming Languages, Operating Systems, Database Systems, Analysis of Algorithms, Data Science, Software Engineering, Computer Architecture, Web Technologies, Cyber Operations, Secure Software Dev & Analysis, Advanced Software Engineering",
+        "Awards":"Dean's List: Fall 2021, Honor Roll: Spring 2022"
+    }
+}
+]

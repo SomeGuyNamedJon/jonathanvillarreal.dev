@@ -1,0 +1,57 @@
+[
+{
+    "company":"Bolner's Fiesta Products",
+    "logo":"bolnersfiesta.png",
+    "startdt":"Feb 2014",
+    "enddt":"Mar 2014",
+    "location":"San Antonio, TX",
+    "blurbs":{
+        "Title":"Packaging",
+        "Duties":"Packaged various spices and peppers"
+    }
+},
+{
+    "company":"Bill Miller's BBQ",
+    "logo":"billmillersbbq.png",
+    "startdt":"Mar 2014",
+    "enddt":"Aug 2014",
+    "location":"San Antonio, TX",
+    "blurbs":{
+        "Title":"Bus & Kitchen",
+        "Duties":"Bused tables, fried chicken, washed dishes, swept floors and parking garage, cleaned bathrooms, took out trash"
+    }
+},
+{
+    "company":"Max Food Mart",
+    "logo":"maxfoodmart.png",
+    "startdt":"Dec 2017",
+    "enddt":"Mar 2018",
+    "location":"San Antonio, TX",
+    "blurbs":{
+        "Title":"Store Manager",
+        "Duties":"Tilled counter, managed storefront, restocked, swept floor, took out trash, looked after store. I worked alone so this was essentially a management position as I would be the only employee in the store a majority of the time."
+    }
+},
+{
+    "company":"SeaWorld San Antonio",
+    "logo":"seaworld.png",
+    "startdt":"Jun 2019",
+    "enddt":"Aug 2019",
+    "location":"San Antonio, TX",
+    "blurbs":{
+        "Title":"Park Prep",
+        "Duties":"Cleaned Bathrooms, picked up litter, compacted trash and recyclables, and completed various other janitorial duties"
+    }
+},
+{
+    "company":"UPS Warehouse",
+    "logo":"UPS.png",
+    "startdt":"Jul 2020",
+    "enddt":"Jan 2021",
+    "location":"San Antonio, TX",
+    "blurbs":{
+        "Title":"Data Acquisition",
+        "Duties":"Corrected addresses on packages as well as completed various other tasks in the small sort area. Would often be moved to other areas of the warehouse to complete duties outside of my position, such as debagging, loading and unloading trucks, and transported irregular packages."
+    }
+}
+]
