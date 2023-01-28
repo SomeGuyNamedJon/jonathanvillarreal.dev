@@ -15,7 +15,7 @@
 .PageView {
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: .25fr 4fr;
+  grid-template-rows: min-content 1fr;
   grid-template-columns: 1fr;
   grid-template-areas: 
     "NavBar"
