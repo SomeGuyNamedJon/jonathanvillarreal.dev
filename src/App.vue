@@ -42,4 +42,10 @@
   text-align: justify;
   margin-inline: 5%;
 }
+
+@media screen and (max-width: 640px) {
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+}
 </style>
