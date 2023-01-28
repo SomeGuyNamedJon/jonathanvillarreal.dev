@@ -1,16 +1,12 @@
 {
     "name":"Name",
     "name_ph":"Your name here...",
-    "address":"Address",
-    "address_ph":"Your address here...",
     "email":"Email",
     "email_ph":"Your email here...",
     "phone":"Phone",
     "phone_ph":"Your phone number here...",
-    "topic":"Inquiry",
-    "topic_ph":"Subject of inquiry...",
-    "msg":"Description",
-    "msg_ph":"Describe your inquiry with more detail...",
+    "msg":"Message",
+    "msg_ph":"Write your message here...",
     "submit":"Submit",
-    "success":"Sent! We'll get back to you soon!"
+    "success":"Sent! I'll get back to you soon!"
 }

@@ -16,14 +16,10 @@
                 name : '',
                 email : '',
                 phone : '',
-                address : '',
-                topic : '',
                 comment : '',
                 nameErr : '',
                 emailErr : '',
                 phoneErr : '',
-                addErr : '',
-                topicErr : '',
                 commentErr : '',
                 success : false,
             }
@@ -103,7 +99,7 @@
 <template>
     <form ref="contact_form" @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
-            <label>{{json.name}} *</label>
+            <label>{{json.name}}</label>
             <input class="form-input" type="text" id="name" v-model="name" :placeholder="json.name_ph">
             <div class="help-block" id="nameHelp">
                 <p v-if="nameErr == 'null'">{{err.name_null}}</p>
@@ -119,28 +115,12 @@
             </div>
 
             <div id="phoneBox" :class="{'form-err' : phoneErr}">
-                <label>{{json.phone}} *</label>
+                <label>{{json.phone}}</label>
                 <input class="form-input" type="text" id="phone" v-model="phone" :placeholder="json.phone_ph">
                 <div class="help-block" id="phoneHelp">
                     <p v-if="phoneErr == 'null'">{{err.phone_null}}</p>
                     <p v-if="phoneErr == 'invalid'">{{err.phone_invalid}}</p>
                 </div>
-            </div>
-        </div>
-
-        <div id="addressBox" :class="{'form-err' : addErr}">
-            <label>{{json.address}}</label>
-            <input class="form-input" type="text" id="address" v-model="address" :placeholder="json.address_ph">
-            <div class="help-block" id="addressHelp">
-                <p v-if="addErr"></p>
-            </div>
-        </div>
-
-        <div id="topicBox" :class="{'form-err' : topicErr}">
-            <label>{{json.topic}}</label>
-            <input class="form-input" type="text" id="topic" v-model="topic" :placeholder="json.topic_ph">
-            <div class="help-block" id="topicHelp">
-                <p v-if="topicErr"></p>
             </div>
         </div>
 
