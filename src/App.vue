@@ -4,6 +4,7 @@
 
 <template>
  <div class="PageView">
+  <h1 class="Title">Jonathan Villarreal</h1>
   <NavBar/>
   <div class="RouterView">
     <RouterView/>
@@ -15,11 +16,16 @@
 .PageView {
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: min-content 1fr;
+  grid-template-rows: min-content min-content 1fr;
   grid-template-columns: 1fr;
-  grid-template-areas: 
+  grid-template-areas:
+    "Title" 
     "NavBar"
     "RouterView";
+}
+
+.Title {
+  grid-area: Title;
 }
 
 .RouterView {
