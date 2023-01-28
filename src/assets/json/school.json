@@ -1,13 +1,13 @@
 [
 {
-    "school":"Theodore Roosevelt High School",
-    "logo":"Roosevelt.png",
-    "graduated":"Jun 2013",
-    "degree":"High School Diploma",
-    "gpa":"ETA Program",
+    "school":"University of Texas at San Antonio",
+    "logo":"UTSA.png",
+    "graduated":"May 2022",
+    "degree":"Bachelor's of Computer Science",
+    "gpa":"3.31 GPA",
     "blurbs":{
-        "Relevant Courses":"Engineering Principles, Engineering Design and Presentation, Computer Programming, Engineering Mathematics, Graphic Design",
-        "Awards":"\"Outstanding Student Computer Programming\" - Plaque"
+        "Relevant Courses":"Intro to Computer Programming II, Calculus I, Calculus II, Discrete Mathematical Structures, Data Structures, Systems Programming, Application Programming, Math Foundations of CS, Computer Organization, Principles of Cyber Security, Game Development, Programming Languages, Operating Systems, Database Systems, Analysis of Algorithms, Data Science, Software Engineering, Computer Architecture, Web Technologies, Cyber Operations, Secure Software Dev & Analysis, Advanced Software Engineering",
+        "Awards":"Dean's List: Fall 2021, Honor Roll: Spring 2022"
     }
 },
 {
@@ -23,14 +23,14 @@
     }
 },
 {
-    "school":"University of Texas at San Antonio",
-    "logo":"UTSA.png",
-    "graduated":"May 2022",
-    "degree":"Bachelor's of Computer Science",
-    "gpa":"3.31 GPA",
+    "school":"Theodore Roosevelt High School",
+    "logo":"Roosevelt.png",
+    "graduated":"Jun 2013",
+    "degree":"High School Diploma",
+    "gpa":"ETA Program",
     "blurbs":{
-        "Relevant Courses":"Intro to Computer Programming II, Calculus I, Calculus II, Discrete Mathematical Structures, Data Structures, Systems Programming, Application Programming, Math Foundations of CS, Computer Organization, Principles of Cyber Security, Game Development, Programming Languages, Operating Systems, Database Systems, Analysis of Algorithms, Data Science, Software Engineering, Computer Architecture, Web Technologies, Cyber Operations, Secure Software Dev & Analysis, Advanced Software Engineering",
-        "Awards":"Dean's List: Fall 2021, Honor Roll: Spring 2022"
+        "Relevant Courses":"Engineering Principles, Engineering Design and Presentation, Computer Programming, Engineering Mathematics, Graphic Design",
+        "Awards":"\"Outstanding Student Computer Programming\" - Plaque"
     }
 }
 ]
