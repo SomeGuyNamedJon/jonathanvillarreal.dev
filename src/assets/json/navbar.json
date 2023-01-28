@@ -16,7 +16,7 @@
 },
 "projects" : {
     "name" : "Projects",
-    "icon" : "code-fork",
+    "icon" : "code-branch",
     "page" : "projects"
 },
 "contact" : {
