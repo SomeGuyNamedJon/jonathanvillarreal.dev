@@ -38,4 +38,7 @@
   grid-gap: 9px;
   padding: 9px;
 }
+.details{
+  text-align: justify;
+}
 </style>

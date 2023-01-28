@@ -15,12 +15,10 @@
             <p>{{ data.startdt }} - {{ data.enddt }} | {{ data.location }}</p>
         </div>
         <div class="details">
-            <dl>
-            <div v-for="(value, name) in data.blurbs">
+            <dl v-for="(value, name) in data.blurbs">
                 <dt>{{ name }}</dt>
                 <dd>{{ value }}</dd>
-            </div>
-            </dl> 
+            </dl>
         </div>
     </div>
 </template>
