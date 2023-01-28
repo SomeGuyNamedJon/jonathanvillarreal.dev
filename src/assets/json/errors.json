@@ -1,0 +1,6 @@
+{
+    "name_null":"Name must not be left blank...",
+    "phone_null":"Phone must not be left blank...",
+    "phone_invalid":"Must be a valid phone number...",
+    "email_invalid":"Must be a valid email address..."
+}
