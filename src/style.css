@@ -49,6 +49,7 @@ h1 {
 hr {
   border: 1px dashed grey;
   width: 60%;
+  margin-bottom: 30px;
 }
 
 button {

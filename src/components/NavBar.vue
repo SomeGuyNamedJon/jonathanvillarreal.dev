@@ -125,7 +125,7 @@
     display: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     .coverBar{
         visibility: visible;
         height: 30px;
