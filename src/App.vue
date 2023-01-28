@@ -40,5 +40,6 @@
 }
 .details{
   text-align: justify;
+  margin-inline: 5%;
 }
 </style>
