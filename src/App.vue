@@ -30,4 +30,12 @@
   grid-area: PageTitle;
   color:#4f3789;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: 9px;
+  padding: 9px;
+}
 </style>
