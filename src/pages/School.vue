@@ -8,7 +8,8 @@
 </script>
 
 <template>
-    <div class="grid-container" v-for="data in pageJSON">
+    <div v-for="(data, index) in pageJSON">
+        <div class="grid-container">
         <div class="school">
             <img :src='"/src/assets/images/"+data.logo' height="100">
             <h2>{{ data.school }}</h2>
@@ -21,6 +22,8 @@
                 <dd>{{ value }}</dd>
             </dl>
         </div>
+        </div>
+        <hr v-if="index != pageJSON.length - 1">
     </div>
 </template>
 
