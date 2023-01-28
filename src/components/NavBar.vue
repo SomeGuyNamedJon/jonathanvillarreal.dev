@@ -71,7 +71,7 @@
     text-decoration: none;
     min-width: fit-content;
     height: 100%;
-    padding-top: .25em;
+    padding-top: .35em;
     padding-inline: 1em;
 }
 
