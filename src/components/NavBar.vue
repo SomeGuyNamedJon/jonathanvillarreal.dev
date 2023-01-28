@@ -23,7 +23,7 @@
 </script>
 
 <template>
-    <div :class="{shown: checked}">
+    <div class="navContainer" :class="{shown: checked}">
     <div class="coverBar">
         <div v-if="!checked" class="currentPage">
             <div v-if="currentPage && pages.includes(currentPage)">
@@ -49,6 +49,12 @@
 </template>
 
 <style>
+.navContainer{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 .navBar {
     width: 100vw;
     height: 2em;
