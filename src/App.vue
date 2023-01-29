@@ -48,6 +48,10 @@
   text-align: justify;
   margin-right: 20%;
 }
+.details dt{
+  font-weight: bold;
+  font-style: oblique;
+}
 .school{
   padding-left: 10%;
 }
