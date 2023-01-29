@@ -16,9 +16,9 @@
             <p>{{ data.startdt }} - {{ data.enddt }} | {{ data.location }}</p>
         </div>
         <div class="details">
-            <dl v-for="(value, name) in data.blurbs">
-                <dt>{{ name }}</dt>
-                <dd>{{ value }}</dd>
+            <dl>
+                <dt>{{ data.title }}</dt>
+                <dd>{{ data.duties }}</dd>
             </dl>
         </div>
         </div>
