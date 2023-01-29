@@ -55,6 +55,7 @@
         background-color: #1a1a1a;
         border-radius: 5px;
         margin-inline: 50px;
+        margin-bottom: 50px;
     }
     .lang{
         margin: 0 auto;
