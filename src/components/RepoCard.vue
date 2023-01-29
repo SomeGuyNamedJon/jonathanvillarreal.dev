@@ -10,7 +10,7 @@
             const loadRepo = async() => {
                 try{
                     const response = await GithubAPI.getRepo(props.repo)
-                    data.value = response
+                    data.value = response.data
                 }catch(err){
                     console.log(props)
                     console.log(err)
@@ -25,7 +25,9 @@
 </script>
 
 <template>
-    <p>{{ data }}</p>
+    <img :src="data.owner.avatar_url" height="100"/>
+    <p>{{ data.full_name }}</p>
+    <p>{{ data.description }}</p>
 </template>
 
 <style scoped>

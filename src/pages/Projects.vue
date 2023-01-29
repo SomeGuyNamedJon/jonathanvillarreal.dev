@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <RepoCard repo="laptop-dotfiles"/>
+    <RepoCard repo="barify"/>
 </template>
 
 <style scoped>
