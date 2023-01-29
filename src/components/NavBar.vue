@@ -50,6 +50,7 @@
 
 <style>
 .navContainer{
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
