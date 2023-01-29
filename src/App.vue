@@ -46,10 +46,22 @@
 }
 .details{
   text-align: justify;
-  margin-inline: 5%;
+  margin-right: 20%;
+}
+.school{
+  padding-left: 10%;
+}
+.company{
+  padding-left: 25%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
+  .details{
+    margin-inline: 5%;
+  }
+  .school, .company{
+    padding-left: 0;
+  }
   .grid-container{
     grid-template-columns: 1fr;
   }

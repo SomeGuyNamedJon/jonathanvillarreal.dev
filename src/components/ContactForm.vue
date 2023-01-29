@@ -143,6 +143,7 @@
 .form-input, .form-select{
     width: 100%;
     font-size: large;
+    font-family:Asap Condensed,Helvetica,Arial,sans-serif;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -214,6 +215,8 @@
     width: 50%
 }
 form {
+    font-weight: bold;
+    font-size: larger;
     border-radius: 5px;
     text-align: left;
     margin-inline: 10%;
