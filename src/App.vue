@@ -51,6 +51,7 @@
   font-style: oblique;
 }
 .school{
+  padding-top: 20px;
   padding-left: 10%;
 }
 .company{
