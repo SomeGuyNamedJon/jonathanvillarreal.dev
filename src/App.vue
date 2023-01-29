@@ -57,7 +57,7 @@
   padding-left: 25%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .details{
     margin-inline: 5%;
   }

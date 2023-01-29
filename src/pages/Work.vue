@@ -30,7 +30,7 @@
     .details {
         margin-right: 35%;
     }
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 850px){
         .details {
             margin-inline: 5%;
         }
