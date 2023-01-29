@@ -140,15 +140,66 @@
 </template>
 
 <style scoped>
-.successBox {
-    border-radius: 25px;
-    padding-block: 10px;
-    margin: 15px 0;
-    font-size: 1.25em;
+.form-input, .form-select{
+    width: 100%;
+    font-size: large;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: #fff;
+    background-color: #2b2a33;
+    border: 2px solid #744fca;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-input:disabled {
+    background-color: #444;
+    border: 2px dotted #a0a0a0;
+    color: #909090;
+}
+.form-input:focus, .form-select:focus{
+    outline: 2px solid #845fda;
+}
+.form-err input, .form-err textarea {
+    border: 2px solid #ff2222;
+}
+.form-err input:focus, .form-err textarea:focus {
+    outline: 2px solid #ff4343;
+}
+.form-err input[type=radio]:focus{
+    outline: none;
+}
+.form-err input[type=radio] + svg{
+    fill: #ff2222;
+}
+.form-err label{
+    color: #ff2222;
+}
+.help-block{
     text-transform: uppercase;
     font-weight: bold;
-    color: #f0f0f0;
-    background-color: green;
+    color: #ff2222;
+    text-align: center;
+}
+.btn{
+    width: 100%;
+    background-color: #744fca;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #845fda;
+}
+.success-box {
+    border-radius: 15px;
+    padding-block: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #22cc77aa;
     text-align: center;
 }
 .form-container{
@@ -162,68 +213,9 @@
 #phoneBox{
     width: 50%
 }
-.form-input, .form-select{
-    width: 100%;
-    font-size: large;
-    font-family: Asap Condensed, Helvetica, Arial, sans-serif;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    color: black;
-    background-color: #f0f0f0;
-    border: 2px solid black;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form-input:disabled {
-    background-color: #444;
-    border: 2px dotted #a0a0a0;
-    color: #909090;
-}
-
-.form-input:focus, .form-select:focus{
-    outline: 2px solid black;
-}
-
-.form-err input, .form-err textarea {
-    border: 2px solid #ff2222;
-}
-
-.form-err input:focus, .form-err textarea:focus {
-    outline: 2px solid #ff4343;
-}
-
-.form-err input[type=radio]:focus{
-    outline: none;
-}
-
-.form-err input[type=radio] + svg{
-    fill: #ff2222;
-}
-
-.form-err label{
-    color: #ff2222;
-}
-
-.help-block{
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #ff2222;
-    text-align: center;
-}
-  
-.btn{
-    width: 100%;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-  
 form {
     border-radius: 5px;
     text-align: left;
+    margin-inline: 10%;
 }
 </style>
