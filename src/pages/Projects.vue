@@ -1,27 +1,12 @@
 <script>
-    import { ref } from 'vue'
-    import GithubAPI from '@/services/GithubAPI'
-    export default {
-        setup(){
-            const data = ref('')
-            const loadRepo = async() => {
-                try{
-                    const response = await GithubAPI.getRepo('/laptop-dotfiles')
-                    data.value = response
-                }catch(err){
-                    console.log(err)
-                }
-            }
-
-            loadRepo()
-
-            return { data }
-        }
+    import RepoCard from '@/components/RepoCard.vue'
+    export default{
+        components: {RepoCard}
     }
 </script>
 
 <template>
-    <p>{{ data }}</p>
+    <RepoCard repo="laptop-dotfiles"/>
 </template>
 
 <style scoped>
