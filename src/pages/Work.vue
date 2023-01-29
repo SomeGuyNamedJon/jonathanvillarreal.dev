@@ -27,5 +27,12 @@
 </template>
 
 <style scoped>
-
+    .details {
+        margin-right: 35%;
+    }
+    @media screen and (max-width: 750px){
+        .details {
+            margin-inline: 5%;
+        }
+    }
 </style>
