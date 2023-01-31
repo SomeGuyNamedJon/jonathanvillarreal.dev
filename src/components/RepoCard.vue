@@ -48,9 +48,12 @@
     </div>
     <div v-else class="card">
         <a class="name" :href="repoData.html_url" target="_blank">{{ repoData.full_name }}</a>
+
+        <div class="contributorBlock">
         <a v-for="contributor in contributorData" :href="contributor.html_url" target="_blank">
             <img class="dot contributor" :src="contributor.avatar_url" :title="contributor.login"/>
         </a>
+        </div>
 
         <p class="desc">{{ repoData.description }}</p>
         <p class="lang">
@@ -89,15 +92,30 @@
     }
     .dot {
         position: relative;
-        top: 4px;
         margin-inline-end: 5px;
         height: 25px;
         width: 25px;
         border-radius: 50%;
         display: inline-block;
     }
+    .lang > .dot{
+        top: 4px;
+    }
 
-    .contributor {
+    .contributorBlock {
         float: right;
+    }
+
+    .contributor:hover{
+        outline: #a0a0a0 solid 2px;
+    }
+
+    @media screen and (max-width: 640px) { 
+        .contributorBlock{
+            margin-block: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%; 
+        }
     }
 </style>
