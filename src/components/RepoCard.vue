@@ -61,7 +61,7 @@
             {{ repoData.language }}
         </p>
         
-        <div class="countBlock">
+        <span class="countBlock">
             <div class="count" v-if="repoData.stargazers_count > 0">
                 <font-awesome-icon icon="star"/> &nbsp; {{ repoData.stargazers_count }}
             </div>
@@ -71,7 +71,7 @@
             <div class="count" v-if="repoData.forks_count > 0">
                 <font-awesome-icon icon="code-fork"/> &nbsp; {{ repoData.forks_count }}
             </div>
-        </div>
+        </span>
     </div>
     
 </template>
@@ -90,7 +90,7 @@
     }
     .count {
         float: right;
-        margin-inline-start: 3vw;
+        margin-inline-start: 2vw;
     }
     .dot {
         position: relative;
@@ -107,7 +107,7 @@
     .contributorBlock {
         float: right;
     }
-
+    
     .contributor:hover{
         outline: #a0a0a0 solid 2px;
     }
@@ -121,7 +121,7 @@
         }
         .count {
             margin-inline-start: 0;
-            margin-inline-end: 3vw;
+            margin-inline-end: 5vw;
         }
     }
 
