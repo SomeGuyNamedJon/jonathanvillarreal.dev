@@ -6,12 +6,12 @@
 </script>
 
 <template>
-    <RepoCard repo="barify"/>
-    <RepoCard repo="BurgerGame"/>
-    <RepoCard repo="UntitledCubeRunner"/>
-    <RepoCard repo="laptop-dotfiles"/>
-    <RepoCard repo="CompanyEquipment"/>
-    <RepoCard repo="PersonalPage"/>
+    <RepoCard user="SomeGuyNamedJon" repo="barify"/>
+    <RepoCard user="SomeGuyNamedJon" repo="BurgerGame"/>
+    <RepoCard user="SomeGuyNamedJon" repo="UntitledCubeRunner"/>
+    <RepoCard user="SomeGuyNamedJon" repo="laptop-dotfiles"/>
+    <RepoCard user="SomeGuyNamedJon" repo="CompanyEquipment"/>
+    <RepoCard user="SomeGuyNamedJon" repo="PersonalPage"/>
 </template>
 
 <style scoped>

@@ -4,13 +4,15 @@
     import GithubAPI from '@/services/GithubAPI'
     export default {
         props: {
+            user: {type: String, required: true},
             repo: {type: String, required: true}
         },
         setup(props){
             const data = ref('')
             const loadRepo = async() => {
                 try{
-                    const response = await GithubAPI.getRepo(props.repo)
+                    let url = props.user+'/'+props.repo
+                    const response = await GithubAPI.getRepo(url)
                     data.value = response.data
                 }catch(err){
                     console.log(props)
