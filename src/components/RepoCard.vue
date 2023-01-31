@@ -8,22 +8,33 @@
             repo: {type: String, required: true}
         },
         setup(props){
-            const data = ref('')
+            const repoData = ref('')
+            const contributorData = ref('')
+            const url = props.user+'/'+props.repo
+
             const loadRepo = async() => {
                 try{
-                    let url = props.user+'/'+props.repo
                     const response = await GithubAPI.getRepo(url)
-                    data.value = response.data
+                    repoData.value = response.data
                 }catch(err){
-                    console.log(props)
                     console.log(err)
-                    data.value = 'ERR'
+                    repoData.value = 'ERR'
+                }
+            }
+
+            const loadContributors = async() => {
+                try{
+                    const response = await GithubAPI.getContributors(url)
+                    contributorData.value = response.data
+                }catch(err){
+                    console.log(err)
                 }
             }
 
             loadRepo()
+            loadContributors()
 
-            return { data }
+            return { repoData, contributorData }
         },
         data(){
             return { colorsJSON: colors }
@@ -32,25 +43,29 @@
 </script>
 
 <template>
-    <div v-if="data == 'ERR'" class="card">
+    <div v-if="repoData == 'ERR'" class="card">
         <h2 style="text-align: center; color: #f00f0f">ERROR: REPOSITORY NOT FOUND</h2>
     </div>
     <div v-else class="card">
-        <a class="name" :href="data.html_url">{{ data.full_name }}</a>
-        <p class="desc">{{ data.description }}</p>
+        <a class="name" :href="repoData.html_url" target="_blank">{{ repoData.full_name }}</a>
+        <a v-for="contributor in contributorData" :href="contributor.html_url" target="_blank">
+            <img class="dot contributor" :src="contributor.avatar_url" :title="contributor.login"/>
+        </a>
+
+        <p class="desc">{{ repoData.description }}</p>
         <p class="lang">
-            <span class="dot" :style="'background-color: '+colorsJSON[data.language]"></span>
-            {{ data.language }}
+            <span class="dot" :style="'background-color: '+colorsJSON[repoData.language]"></span>
+            {{ repoData.language }}
         </p>
         
-        <div class="count" v-if="data.stargazers_count > 0">
-            <font-awesome-icon icon="star"/> &nbsp; {{ data.stargazers_count }}
+        <div class="count" v-if="repoData.stargazers_count > 0">
+            <font-awesome-icon icon="star"/> &nbsp; {{ repoData.stargazers_count }}
         </div>
-        <div class="count" v-if="data.watchers_count > 0">
-            <font-awesome-icon icon="eye"/> &nbsp; {{ data.watchers_count }}
+        <div class="count" v-if="repoData.watchers_count > 0">
+            <font-awesome-icon icon="eye"/> &nbsp; {{ repoData.watchers_count }}
         </div>
-        <div class="count" v-if="data.forks_count > 0">
-            <font-awesome-icon icon="code-fork"/> &nbsp; {{ data.forks_count }}
+        <div class="count" v-if="repoData.forks_count > 0">
+            <font-awesome-icon icon="code-fork"/> &nbsp; {{ repoData.forks_count }}
         </div>
     </div>
     
@@ -80,5 +95,9 @@
         width: 25px;
         border-radius: 50%;
         display: inline-block;
+    }
+
+    .contributor {
+        float: right;
     }
 </style>
