@@ -61,14 +61,16 @@
             {{ repoData.language }}
         </p>
         
-        <div class="count" v-if="repoData.stargazers_count > 0">
-            <font-awesome-icon icon="star"/> &nbsp; {{ repoData.stargazers_count }}
-        </div>
-        <div class="count" v-if="repoData.watchers_count > 0">
-            <font-awesome-icon icon="eye"/> &nbsp; {{ repoData.watchers_count }}
-        </div>
-        <div class="count" v-if="repoData.forks_count > 0">
-            <font-awesome-icon icon="code-fork"/> &nbsp; {{ repoData.forks_count }}
+        <div class="countBlock">
+            <div class="count" v-if="repoData.stargazers_count > 0">
+                <font-awesome-icon icon="star"/> &nbsp; {{ repoData.stargazers_count }}
+            </div>
+            <div class="count" v-if="repoData.watchers_count > 0">
+                <font-awesome-icon icon="eye"/> &nbsp; {{ repoData.watchers_count }}
+            </div>
+            <div class="count" v-if="repoData.forks_count > 0">
+                <font-awesome-icon icon="code-fork"/> &nbsp; {{ repoData.forks_count }}
+            </div>
         </div>
     </div>
     
@@ -79,7 +81,7 @@
         text-align: left;
         background-color: #1a1a1a;
         border-radius: 5px;
-        margin-inline: 50px;
+        margin-inline: 5%;
         margin-bottom: 50px;
     }
     .lang{
@@ -110,12 +112,26 @@
         outline: #a0a0a0 solid 2px;
     }
 
-    @media screen and (max-width: 640px) { 
-        .contributorBlock{
+    @media screen and (max-width: 640px) {  
+        .contributorBlock, .countBlock{
             margin-block: 20px;
             display: flex;
             flex-wrap: wrap;
             width: 100%; 
+        }
+        .count {
+            margin-inline-start: 0;
+            margin-inline-end: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .name{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 250px;
+            display: block;
+            overflow: hidden
         }
     }
 </style>
