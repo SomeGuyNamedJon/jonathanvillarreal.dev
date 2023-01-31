@@ -17,6 +17,7 @@
                 }catch(err){
                     console.log(props)
                     console.log(err)
+                    data.value = 'ERR'
                 }
             }
 
@@ -31,7 +32,10 @@
 </script>
 
 <template>
-    <div class="card">
+    <div v-if="data == 'ERR'" class="card">
+        <h2 style="text-align: center; color: #f00f0f">ERROR: REPOSITORY NOT FOUND</h2>
+    </div>
+    <div v-else class="card">
         <a class="name" :href="data.html_url">{{ data.full_name }}</a>
         <p class="desc">{{ data.description }}</p>
         <p class="lang">
@@ -49,6 +53,7 @@
             <font-awesome-icon icon="code-fork"/> &nbsp; {{ data.forks_count }}
         </div>
     </div>
+    
 </template>
 
 <style scoped>
