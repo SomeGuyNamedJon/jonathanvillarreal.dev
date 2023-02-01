@@ -174,13 +174,13 @@
 .form-input, .form-select{
     width: 100%;
     font-size: large;
-    font-family:Asap Condensed,Helvetica,Arial,sans-serif;
+    font-family: var(--main-font);
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     color: #fff;
-    background-color: #2b2a33;
-    border: 2px solid #744fca;
+    background-color: var(--grey);
+    border: 2px solid var(--purple);
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -190,10 +190,10 @@
     color: #909090;
 }
 .form-input:focus, .form-select:focus{
-    outline: 2px solid #845fda;
+    outline: 2px solid var(--purple);
 }
 .form-err input, .form-err textarea {
-    border: 2px solid #ff2222;
+    border: 2px solid var(--err-red);
 }
 .form-err input:focus, .form-err textarea:focus {
     outline: 2px solid #ff4343;
@@ -202,22 +202,22 @@
     outline: none;
 }
 .form-err input[type=radio] + svg{
-    fill: #ff2222;
+    fill: var(--err-red);
 }
 .form-err label{
-    color: #ff2222;
+    color: var(--err-red);
 }
 .help-block{
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-family: var(--alt-font);
     text-transform: uppercase;
     font-size: medium;
-    color: #ff2222;
+    color: var(--err-red);
     float: right;
     line-height: 1em;
 }
 .btn{
     width: 100%;
-    background-color: #744fca;
+    background-color: var(--purple);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -226,14 +226,14 @@
     cursor: pointer;
 }
 .btn:hover {
-    background-color: #845fda;
+    background-color: var(--purple);
 }
 .success-box {
     border-radius: 15px;
     padding-block: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: #22cc77aa;
+    background-color: var(--success-green);
     text-align: center;
 }
 .form-container{
@@ -272,7 +272,7 @@ form {
 */
 
 .contactSVG {
-  fill: rgb(242, 242, 242);
+  fill: var(--off-white);
   height: 2rem;
   width: 2rem;
   margin: 0.2rem;
@@ -297,12 +297,12 @@ input + svg {
 .form-radio:hover + svg,
 .form-radio:focus + svg,
 .form-check:hover + svg {
-  fill: #845fda !important;
+  fill: var(--purple) !important;
 }
 
 .form-radio:checked + svg,
 .form-check:checked + svg {
-  fill: #6538b5 !important;
+  fill: var(--deep-purple) !important;
 }
 
 input.form-check {

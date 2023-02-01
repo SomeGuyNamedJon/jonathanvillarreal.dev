@@ -79,7 +79,7 @@
 <style scoped>
     .card {
         text-align: left;
-        background-color: #1a1a1a;
+        background-color: var(--dark-grey);
         border-radius: 5px;
         margin-inline: 5%;
         margin-bottom: 50px;

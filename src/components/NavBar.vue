@@ -50,7 +50,7 @@
 
 <style>
 .navContainer{
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-family: var(--alt-font);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -61,7 +61,7 @@
     width: 100vw;
     height: 2em;
     grid-area: NavBar;
-    background-color: #673ab7;
+    background-color: var(--purple);
     margin-bottom: 5vh;
 }
 
@@ -78,16 +78,16 @@
 }
 
 .navLink:hover{
-    background-color: #442e79;
+    background-color: var(--dark-purple);
 }
 
 .navLink.router-link-active {
     font-weight: bolder;
-    background-color: #4f3789;
+    background-color: var(--deep-purple);
 }
 .coverBar {
     display: flex;
-    background-color: #4f3789;
+    background-color: var(--deep-purple);
     flex-direction: row;
     justify-content: space-between;
     height: 0px;
@@ -98,7 +98,7 @@
     position: relative;
     left: 15px;
     padding-top: 3px;
-    color:#f0f0f0 !important;
+    color: var(--off-white) !important;
     font-size: larger;
     font-weight: bold;
     line-height: 30px;
@@ -109,14 +109,13 @@
     left: 50px;
     margin-left: auto;
     font-size: 20px;
-    color: #f0f0f0;
+    color: var(--off-white);
     line-height: 30px;
     cursor: pointer;
     display: none;
     border-radius: 100px;
     width: 100px;
     height: 30px;
-    background-color: var(--darkred);
 }
 #MenuIcon {
     position: relative;

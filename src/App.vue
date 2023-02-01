@@ -28,7 +28,7 @@
 
 .Title {
   grid-area: Title;
-  background-color: #4f3789;
+  background-color: var(--deep-purple);
   padding-block: 15px;
 }
 

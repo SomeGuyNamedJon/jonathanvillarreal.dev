@@ -1,9 +1,21 @@
 :root {
-  font-family: Asap Condensed, Inter, Avenir, Helvetica, Arial, sans-serif;
+  --main-font: Asap Condensed, Inter, Avenir, Helvetica, Arial, sans-serif;
+  --alt-font: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --purple: #673ab7;
+  --deep-purple: #4f3789;
+  --dark-purple: #442e79;
+  --off-white: #f0f0f0;
+  --err-red: #ff2222;
+  --success-green: #22cc77aa;
+  --background: #242424;
+  --grey: #2b2a33;
+  --dark-grey: #1a1a1a;
+
+  font-family: var(--main-font);
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
