@@ -84,6 +84,14 @@
         margin-inline: 5%;
         margin-bottom: 50px;
     }
+    .name{
+        font-family: var(--alt-font);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 75%;
+        display: block;
+        overflow: hidden;
+    }
     .lang{
         margin: 0 auto;
         display: inline-block;
@@ -125,13 +133,9 @@
         }
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 520px) {
         .name{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 250px;
-            display: block;
-            overflow: hidden
+           width: 240px; 
         }
     }
 </style>
