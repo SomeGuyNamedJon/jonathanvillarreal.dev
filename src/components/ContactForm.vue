@@ -112,7 +112,7 @@
 <template>
     <form ref="contact_form" @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
-            <label>{{json.name}}</label>
+            <label class="form-label">{{json.name}}</label>
             <input class="form-input" type="text" id="name" v-model="name" :placeholder="json.name_ph">
             <div class="help-block" id="nameHelp">
                 <p v-if="nameErr == 'null'">{{err.name_null}}</p>
@@ -120,7 +120,7 @@
         </div>
         <div class="form-container">
             <div id="emailBox" :class="{'form-err' : emailErr}">
-                <label>{{json.email}}</label>
+                <label class="form-label">{{json.email}}</label>
                 <input class="form-input" type="text" id="email" v-model="email" :placeholder="json.email_ph">
                 <div class="help-block" id="emailHelp">
                     <p v-if="emailErr == 'null'">{{err.email_null}}</p>
@@ -129,7 +129,7 @@
             </div>
 
             <div id="phoneBox" :class="{'form-err' : phoneErr}">
-                <label>{{json.phone}}</label>
+                <label class="form-label">{{json.phone}}</label>
                 <input class="form-input" type="text" id="phone" v-model="phone" :placeholder="json.phone_ph">
                 <div class="help-block" id="phoneHelp">
                     <p v-if="phoneErr == 'null'">{{err.phone_null}}</p>
@@ -139,7 +139,7 @@
         </div>
 
         <div id="methodBox" :class="{'form-err' : methodErr}">
-        <label>Prefered Contact Method</label>
+        <label class="form-label">Prefered Contact Method</label>
         <div class="methodOptions">
             <label for="contact-Email">
                 <input class="form-radio" type="radio" id="contact-Email" v-model="method" value="Email">                      
@@ -156,7 +156,7 @@
         </div>
 
         <div id="commentBox" :class="{'form-err' : commentErr}">
-            <label>{{json.msg}}</label>
+            <label class="form-label">{{json.msg}}</label>
             <textarea class="form-input" id="comment" v-model="comment" rows="10" :placeholder="json.msg_ph"></textarea>
             <div class="help-block" id="commentHelp">
                 <p v-if="commentErr"></p>
@@ -258,6 +258,11 @@ form {
 .methodOptions{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+}
+
+.form-label {
+    float: left;
     width: 100%;
 }
 
