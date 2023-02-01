@@ -64,7 +64,7 @@
                 if(this.method == ''){
                     this.methodErr = 'null'
                 }else{
-                    console.log(this.method)
+                    this.methodErr = ''
                 }
 
                 if(valid){
