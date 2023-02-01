@@ -264,6 +264,7 @@ form {
 .form-label {
     float: left;
     width: 100%;
+    margin-top: 15px;
 }
 
 /*
