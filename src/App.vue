@@ -4,7 +4,9 @@
 
 <template>
  <div class="PageView">
-  <h1 class="Title">Jonathan Villarreal</h1>
+  <div class="Title">
+    <img id="banner" src="@/assets/images/JonathanV.png" height="150"/>
+  </div>
   <NavBar/>
   <div class="RouterView">
     <RouterView/>
@@ -30,11 +32,6 @@
 
 .RouterView {
   grid-area: RouterView;
-}
-
-.PageTitle {
-  grid-area: PageTitle;
-  color:#4f3789;
 }
 
 .grid-container {
@@ -67,6 +64,10 @@
   }
   .grid-container{
     grid-template-columns: 1fr;
+  }
+  #banner{
+    height: auto;
+    width: 90vw;
   }
 }
 </style>
