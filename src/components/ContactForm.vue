@@ -113,33 +113,36 @@
     <form ref="contact_form" @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
             <label>{{json.name}}</label>
-            <input class="form-input" type="text" id="name" v-model="name" :placeholder="json.name_ph">
             <div class="help-block" id="nameHelp">
                 <p v-if="nameErr == 'null'">{{err.name_null}}</p>
             </div>
+            <input class="form-input" type="text" id="name" v-model="name" :placeholder="json.name_ph">
         </div>
         <div class="form-container">
             <div id="emailBox" :class="{'form-err' : emailErr}">
                 <label>{{json.email}}</label>
-                <input class="form-input" type="text" id="email" v-model="email" :placeholder="json.email_ph">
                 <div class="help-block" id="emailHelp">
                     <p v-if="emailErr == 'null'">{{err.email_null}}</p>
                     <p v-if="emailErr == 'invalid'">{{err.email_invalid}}</p>
                 </div>
+                <input class="form-input" type="text" id="email" v-model="email" :placeholder="json.email_ph">
             </div>
 
             <div id="phoneBox" :class="{'form-err' : phoneErr}">
                 <label>{{json.phone}}</label>
-                <input class="form-input" type="text" id="phone" v-model="phone" :placeholder="json.phone_ph">
                 <div class="help-block" id="phoneHelp">
                     <p v-if="phoneErr == 'null'">{{err.phone_null}}</p>
                     <p v-if="phoneErr == 'invalid'">{{err.phone_invalid}}</p>
                 </div>
+                <input class="form-input" type="text" id="phone" v-model="phone" :placeholder="json.phone_ph">
             </div>
         </div>
 
         <div id="methodBox" :class="{'form-err' : methodErr}">
         <label>Prefered Contact Method</label>
+        <div class="help-block" id="methodHelp">
+            <p v-if="methodErr == 'null'">{{ err.method_null }}</p>
+        </div>
         <div class="methodOptions">
             <label for="contact-Email">
                 <input class="form-radio" type="radio" id="contact-Email" v-model="method" value="Email">                      
@@ -150,17 +153,14 @@
                 <svg class="contactSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
             </label>
         </div>
-        <div class="help-block" id="methodHelp">
-            <p v-if="methodErr == 'null'">{{ err.method_null }}</p>
-        </div>        
         </div>
 
         <div id="commentBox" :class="{'form-err' : commentErr}">
             <label>{{json.msg}}</label>
-            <textarea class="form-input" id="comment" v-model="comment" rows="10" :placeholder="json.msg_ph"></textarea>
             <div class="help-block" id="commentHelp">
                 <p v-if="commentErr"></p>
             </div>
+            <textarea class="form-input" id="comment" v-model="comment" rows="10" :placeholder="json.msg_ph"></textarea>
         </div>
         
         <button class="btn">
@@ -212,7 +212,7 @@
     text-transform: uppercase;
     font-size: medium;
     color: #ff2222;
-    text-align: center;
+    float: inline-end;
 }
 .btn{
     width: 100%;
