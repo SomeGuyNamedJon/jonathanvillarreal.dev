@@ -208,8 +208,9 @@
     color: #ff2222;
 }
 .help-block{
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-size: medium;
     color: #ff2222;
     text-align: center;
 }
