@@ -213,7 +213,7 @@
     font-size: medium;
     color: #ff2222;
     float: right;
-    line-height: 0;
+    line-height: 1em;
 }
 .btn{
     width: 100%;
@@ -303,5 +303,15 @@ input + svg {
 input.form-check {
   width: 2rem;
   height: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .form-container {
+        display: block;
+    }
+    #phoneBox, #emailBox{
+        width: 100%;
+        margin-inline-end: 0;
+    }
 }
 </style>
