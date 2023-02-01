@@ -65,8 +65,8 @@
             <div class="count" v-if="repoData.stargazers_count > 0">
                 <font-awesome-icon icon="star"/> &nbsp; {{ repoData.stargazers_count }}
             </div>
-            <div class="count" v-if="repoData.watchers_count > 0">
-                <font-awesome-icon icon="eye"/> &nbsp; {{ repoData.watchers_count }}
+            <div class="count" v-if="repoData.subscribers_count > 0">
+                <font-awesome-icon icon="eye"/> &nbsp; {{ repoData.subscribers_count }}
             </div>
             <div class="count" v-if="repoData.forks_count > 0">
                 <font-awesome-icon icon="code-fork"/> &nbsp; {{ repoData.forks_count }}
@@ -107,7 +107,7 @@
     .contributorBlock {
         float: right;
     }
-    
+
     .contributor:hover{
         outline: #a0a0a0 solid 2px;
     }
