@@ -105,6 +105,7 @@
     float: center;
 }
 .hamburgerMenu {
+    background-color: var(--dark-purple);
     position: relative;
     left: 50px;
     margin-left: auto;
