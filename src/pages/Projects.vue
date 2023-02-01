@@ -7,8 +7,9 @@
 
 <template>
     <hr>
-    <h2>Web Dev</h2>
+    <h2>Web Development</h2>
     <hr>
+    <RepoCard user="SomeGuyNamedJon" repo="someguynamedjon.github.io"/>
     <RepoCard user="SomeGuyNamedJon" repo="martykitchenart"/>
     <RepoCard user="SomeGuyNamedJon" repo="PersonalPage"/>
     <RepoCard user="SomeGuyNamedJon" repo="CompanyEquipment"/>
