@@ -2,5 +2,7 @@
     "name_null":"Name must not be left blank...",
     "phone_null":"Phone must not be left blank...",
     "phone_invalid":"Must be a valid phone number...",
-    "email_invalid":"Must be a valid email address..."
+    "email_null":"Email must not be left blank...",
+    "email_invalid":"Must be a valid email address...",
+    "method_null":"Contact method must be selected..." 
 }
