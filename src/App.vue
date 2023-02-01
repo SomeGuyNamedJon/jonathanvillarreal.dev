@@ -28,6 +28,8 @@
 
 .Title {
   grid-area: Title;
+  background-color: #4f3789;
+  padding-block: 15px;
 }
 
 .RouterView {

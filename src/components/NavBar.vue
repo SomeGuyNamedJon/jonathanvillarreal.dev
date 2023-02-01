@@ -78,16 +78,16 @@
 }
 
 .navLink:hover{
-    background-color: #4f3789;
+    background-color: #442e79;
 }
 
 .navLink.router-link-active {
     font-weight: bolder;
-    background-color: #845fda;
+    background-color: #4f3789;
 }
 .coverBar {
     display: flex;
-    background-color: #673ab7;
+    background-color: #4f3789;
     flex-direction: row;
     justify-content: space-between;
     height: 0px;
