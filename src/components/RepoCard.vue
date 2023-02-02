@@ -79,7 +79,8 @@
 <style scoped>
     .card {
         text-align: left;
-        background-color: var(--dark-grey);
+        background-image: linear-gradient(160deg, var(--dark-grey), var(--dark-purple));
+        outline: #333 solid 5px;
         border-radius: 5px;
         margin-inline: 5%;
         margin-bottom: 50px;
