@@ -18,6 +18,8 @@
             </p>
         </div>
 
+        <hr class="Line1"/>
+
         <div class="School blurb">
             <h2>Bachelor's in Computer Science</h2>
             <p>
@@ -36,6 +38,8 @@
             <img id="diploma" src="@/assets/images/diploma.png" width="500"/>
         </div>
 
+        <hr class="Line2"/>
+        
         <div class="Neofetch">
             <img id="neofetch" src="@/assets/images/neofetch.png" width="560"/>
         </div>
@@ -60,11 +64,13 @@
     .MainView{
         box-sizing: border-box;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr min-content 1fr min-content 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "Face Profile" 
+        "Face Profile"
+        "Line1 Line1"
         "School Diploma"
+        "Line2 Line2"
         "Neofetch Linux";
     }
     .blurb {
@@ -74,7 +80,6 @@
         text-align: justify;
         padding-inline: 10%;
         padding-bottom: 5%;
-        margin-bottom: 10%;
     }
 
     #face, #diploma, #neofetch{
@@ -128,15 +133,23 @@
         left: 10%;
     }
     
+    .Line1 {
+        grid-area: Line1;
+    }
+    .Line2 {
+        grid-area: Line2;
+    }
     @media screen and (max-width: 850px){
         .MainView {
-            grid-template-rows: min-content min-content min-content min-content min-content min-content;
+            grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
             grid-template-columns: 1fr;
             grid-template-areas: 
             "Face"
             "Profile"
+            "Line1"
             "Diploma"
             "School"
+            "Line2"
             "Neofetch"
             "Linux";
         }
