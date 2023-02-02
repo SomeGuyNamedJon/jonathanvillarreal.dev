@@ -94,8 +94,8 @@
         background-image: linear-gradient(
             165deg,
             transparent 0% 65%,
-            rgba(var(--dark-grey), 0.7) 70%,
-            rgba(var(--dark-purple), 0.8) 80%,
+            var(--dark-grey) 70%,
+            var(--dark-purple) 80%,
             var(--deep-dark-purple) 100%
             );
         background-position: 0% 0%;
