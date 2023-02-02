@@ -27,6 +27,12 @@
 </template>
 
 <style scoped>
+    .grid-container {
+        margin-inline: 10%;
+        border-radius: 5px;
+        outline: var(--dark-grey) solid 5px;
+        background-color: rgba(0, 0, 0, 0.26);
+    }
     .badge{
         position: relative;
         left: 5%;
