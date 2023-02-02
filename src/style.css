@@ -1,16 +1,16 @@
 :root {
   --main-font: Asap Condensed, Inter, Avenir, Helvetica, Arial, sans-serif;
   --alt-font: Inter, Avenir, Helvetica, Arial, sans-serif;
-  --purple: rgba(103,58,183,1.0);
-  --deep-purple: rgba(79,55,137,1.0);
-  --dark-purple: rgba(53,36,94,1.0);
-  --deep-dark-purple: rgba(30,13,70,1.0);
-  --off-white: rgba(240,240,240,1.0);
-  --err-red: rgba(255,34,34,1.0);
-  --success-green: rgba(34,204,119,0.67);
-  --background: rgba(36,36,36,1.0);
-  --grey: rgba(43,42,51,1.0);
-  --dark-grey: rgba(26,26,26,1.0);
+  --purple: #673ab7;
+  --deep-purple: #4f3789;
+  --dark-purple: #442e79;
+  --deep-dark-purple: #1e0d46;
+  --off-white: #f0f0f0;
+  --err-red: #ff2222;
+  --success-green: #22cc77aa;
+  --background: #242424;
+  --grey: #2b2a33;
+  --dark-grey: #1a1a1a;
 
   font-family: var(--main-font);
   font-size: 20px;
