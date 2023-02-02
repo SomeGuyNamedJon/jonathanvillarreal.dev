@@ -69,6 +69,13 @@
                     this.methodErr = ''
                 }
 
+                if(this.comment == ''){
+                    this.commentErr = 'null'
+                    valid = false
+                }else{
+                    this.commentErr = ''
+                }
+
                 if(valid){
                     var trimmedString = (this.comment+' ').substr(0, 35);
                     trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
@@ -164,7 +171,7 @@
             <label class="form-label">{{json.msg}}</label>
             <textarea class="form-input" id="comment" v-model="comment" rows="10" :placeholder="json.msg_ph"></textarea>
             <div class="help-block" id="commentHelp">
-                <p v-if="commentErr"></p>
+                <p v-if="commentErr == 'null'">{{ err.message_null }}</p>
             </div>
         </div>
         
