@@ -1,6 +1,5 @@
 <img src="./src/assets/images/JV.png" height="250" />
 
-# Personal Page V2
 # [jonathanvillarreal.dev](http://jonathanvillarreal.dev)
 IT LIVES!!!! The page is up and in a decent state. Call this 1.0 release. There are still things to work on and to tweak, but I'd consider this satisfactory for now. Might shelve this for now while I work on other things, but I still definitely want to edit some things.
 
