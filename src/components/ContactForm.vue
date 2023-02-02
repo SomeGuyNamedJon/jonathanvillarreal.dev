@@ -29,6 +29,7 @@
         methods: {
             onSubmit(e){                
                 e.preventDefault();
+                console.log("Something")
                 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
                 const phoneRegex = /^(\+1)?(-|\.)?(\(\d{3}\)|\d{3})(-|\.)?\d{3}(-|\.)?\d{4}$/
                 var valid = true //change to true when you want to turn emails on
@@ -63,16 +64,21 @@
 
                 if(this.method == ''){
                     this.methodErr = 'null'
+                    valid = false
                 }else{
                     this.methodErr = ''
                 }
 
                 if(valid){
+                    var trimmedString = (this.comment+' ').substr(0, 35);
+                    trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+
                     var body = {
                         "name" : this.name,
                         "email" : this.email,
                         "phone" : this.phone,
                         "comment" : this.comment,
+                        "topic" : trimmedString+'...',
                         "method" : this.method
                     }
                     this.success = emailjs.send("submit_service","contact_form", body)
@@ -109,7 +115,7 @@
 
 <template>
     <div class="contact-form">
-    <form @submit="onSubmit"> 
+    <form ref="contact-form" @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
             <label class="form-label">{{json.name}}</label>
             <input class="form-input" type="text" id="name" v-model="name" :placeholder="json.name_ph">
@@ -166,7 +172,7 @@
             <font-awesome-icon icon="circle-check"/> &nbsp;{{json.submit}}
         </button>
     </form>
-    <div v-if="success" class="successBox">{{json.success}}</div>
+    <div v-if="success" class="success-box">{{json.success}}</div>
     </div>
 </template>
 
@@ -240,6 +246,8 @@
 .success-box {
     border-radius: 15px;
     padding-block: 10px;
+    margin-top: 2%;
+    margin-inline: 12%;
     text-transform: uppercase;
     font-weight: bold;
     background-color: var(--success-green);
