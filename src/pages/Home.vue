@@ -1,7 +1,7 @@
 <template>
     <div class="grid-container">
         <div class="Face">
-            <img id="face" src="@/assets/images/Me.jpg" height="325"/>
+            <img id="face" src="@/assets/images/Me.jpg" height="375"/>
         </div>
         <div class="Profile blurb">
             <h2>Who am I?</h2>
@@ -33,12 +33,30 @@
             </p>
         </div>
         <div class="Diploma">
-            <img id="diploma" src="@/assets/images/diploma.png" width="425"/>
+            <img id="diploma" src="@/assets/images/diploma.png" width="500"/>
+        </div>
+
+        <div class="Neofetch">
+            <img id="neofetch" src="@/assets/images/neofetch.png" height="300"/>
+        </div>
+        <div class="Linux blurb">
+            <h2>My experience with Linux</h2>
+            <p>
+                Linux is a big part of my life. I first gained a fascination with the operating system in high school when
+                I was trying to revive a hand-me-down laptop that orginally ran Windows Vista. After having to reinstall
+                Vista several times because it would always result in an irrecoverable BSoD, I began looking for options and
+                discovered Ubuntu. I believe it was release 11.04. I became obessed with the idea of a free alternative that
+                allowed you do whatever with your system. Total freedom might come with the ability to break things, but I took
+                it in stride. What really sold me was the customization options, not only within a given desktop environment,
+                but what your desktop environment even was. Needless to say I spent a lot of time distro and environment hopping
+                after that. I wanted to consume as much as I could, experience all the options out there. Nowadays I'm running
+                EndeavourOS for my work and gaming machines configured using bspwm the tiling window manager.
+            </p>
         </div>
     </div>
 </template>
 
-<style scoped>
+<style scoped> 
     .blurb {
         outline: var(--dark-grey) solid 5px;
         border-radius: 5px;
@@ -49,30 +67,39 @@
         margin-bottom: 10%;
     }
 
-    #face, #diploma{
+    #face, #diploma, #neofetch{
         border-radius: 5px;
         outline: var(--dark-grey) solid 5px;
+    }
+    #neofetch{
+        padding-block: 20px;
+        padding-inline-end: 5px;
+        background-color: rgba(0, 0, 0, 0.26);
     }
     .Face{
         position: relative;
         top: 5%;
-        left: 10%;
+        left: 15%;
         z-index: 1;
-    }
-
-    .Profile{
-        position: relative;
-        right: 20%;
-    }
-
-    .School{
-        position: relative;
-        left: 20%;
     }
     .Diploma {
         position: relative;
-        right: 3%;
+        right: 6%;
         top: 5%;
+    }
+    .Neofetch {
+        position: relative;
+        top: 5%;
+        z-index: 1;
+    }
+
+    .Profile, .Linux{
+        position: relative;
+        right: 10%;
+    }
+    .School{
+        position: relative;
+        left: 10%;
     }
     
     @media screen and (max-width: 850px){
