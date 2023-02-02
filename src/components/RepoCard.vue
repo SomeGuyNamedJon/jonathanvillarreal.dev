@@ -78,13 +78,43 @@
 
 <style scoped>
     .card {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.26);
         text-align: left;
-        background-image: linear-gradient(160deg, var(--dark-grey), var(--dark-purple));
-        outline: #333 solid 5px;
+        outline: var(--dark-grey) solid 5px;
         border-radius: 5px;
         margin-inline: 5%;
         margin-bottom: 50px;
         padding: 2em;
+        overflow: hidden;
+        transition: all 150ms ease;
+    }
+    .card:before{
+        content: "";
+        background-image: linear-gradient(
+            165deg,
+            transparent 0% 65%,
+            rgba(var(--dark-grey), 0.7) 70%,
+            rgba(var(--dark-purple), 0.8) 80%,
+            var(--deep-dark-purple) 100%
+            );
+        background-position: 0% 0%;
+        background-size: 300% 300%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        transition: background-position 350ms ease;
+        z-index: -1;
+    }
+    .card:hover {
+        margin-inline: 4.5%;
+        padding-block: 2.5em; 
+    }
+    .card:hover:before {
+        background-position: 90% 90%;
+        transform: scale(1.5, 1.5);
     }
     .name{
         font-family: var(--alt-font); 
