@@ -178,7 +178,6 @@
     padding-bottom: 3%;
     margin-inline: 10%;
     margin-bottom: 2.5%;
-    background-color: #444;
     border-radius: 5px;
     outline: var(--dark-grey) solid 5px;
     background-color: rgba(0, 0, 0, 0.26);
