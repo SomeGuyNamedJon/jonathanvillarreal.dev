@@ -130,7 +130,7 @@
     .coverBar{
         visibility: visible;
         height: 30px;
-        padding-block: 5px;
+        padding-bottom: 5px;
     }
     .navBar {
         visibility: collapse;
