@@ -31,6 +31,7 @@
     .badge{
         position: relative;
         left: 1%;
+        top: 7%;
     }
     .details {
         position: relative;
