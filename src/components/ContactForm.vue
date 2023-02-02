@@ -110,7 +110,8 @@
 </script>
 
 <template>
-    <form ref="contact_form" @submit="onSubmit"> 
+    <div class="contact-form">
+    <form @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
             <label class="form-label">{{json.name}}</label>
             <input class="form-input" type="text" id="name" v-model="name" :placeholder="json.name_ph">
@@ -168,9 +169,20 @@
         </button>
     </form>
     <div v-if="success" class="successBox">{{json.success}}</div>
+    </div>
 </template>
 
 <style scoped>
+.contact-form {
+    padding-top: 2.5%;
+    padding-bottom: 3%;
+    margin-inline: 10%;
+    margin-bottom: 2.5%;
+    background-color: #444;
+    border-radius: 5px;
+    outline: var(--dark-grey) solid 5px;
+    background-color: rgba(0, 0, 0, 0.26);
+}
 .form-input, .form-select{
     width: 100%;
     font-size: large;
