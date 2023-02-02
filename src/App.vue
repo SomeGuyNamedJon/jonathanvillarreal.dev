@@ -11,6 +11,9 @@
   <div class="RouterView">
     <RouterView/>
   </div>
+  <div class="Footer">
+    <p>@2023 Jonathan Villarreal</p>
+  </div>
  </div>
 </template>
 
@@ -25,6 +28,17 @@
 .Title {
   background-color: var(--deep-purple);
   padding-block: 15px;
+}
+
+.Footer {
+  background-color: var(--purple);
+  margin-top: 2%;
+}
+
+.Footer > p {
+  margin-bottom: 0 !important;
+  font-weight: 500;
+  padding: 5px;
 }
 
 body{
