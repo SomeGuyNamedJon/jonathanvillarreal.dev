@@ -1,11 +1,11 @@
 <script>
     import contactForm from '@/assets/json/form.json'
     import contactErr from '@/assets/json/errors.json'
-    //import emailjs from 'emailjs-com'
+    import emailjs from '@emailjs/browser'
 
     export default{ 
         setup(){
-            //emailjs.init('eE-trqXuIbiTQ-XvR');
+            emailjs.init('eE-trqXuIbiTQ-XvR');
             const json = contactForm
             const err = contactErr
             return {json, err}
@@ -72,8 +72,6 @@
                         "name" : this.name,
                         "email" : this.email,
                         "phone" : this.phone,
-                        "address" : this.address,
-                        "topic" : this.topic,
                         "comment" : this.comment,
                         "method" : this.method
                     }
