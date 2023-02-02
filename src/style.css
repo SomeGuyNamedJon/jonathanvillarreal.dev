@@ -82,7 +82,14 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.details{
+  text-align: justify;
+  margin-right: 20%;
+}
+.details dt{
+  font-weight: bold;
+  font-style: oblique;
+}
 .card {
   padding: 2em;
 }
@@ -93,6 +100,22 @@ button:focus-visible {
   padding: 0;
   text-align: center;
   overflow-x: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+@media screen and (max-width: 850px) {
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+  #banner{
+    height: auto;
+    width: 90vw;
+  }
 }
 
 @media (prefers-color-scheme: light) {

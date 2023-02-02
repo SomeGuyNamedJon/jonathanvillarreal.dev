@@ -15,61 +15,8 @@
 </template>
 
 <style>
-.PageView {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-rows: min-content min-content 1fr;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "Title" 
-    "NavBar"
-    "RouterView";
-}
-
 .Title {
-  grid-area: Title;
   background-color: var(--deep-purple);
   padding-block: 15px;
-}
-
-.RouterView {
-  grid-area: RouterView;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fill, 1fr);
-}
-.details{
-  text-align: justify;
-  margin-right: 20%;
-}
-.details dt{
-  font-weight: bold;
-  font-style: oblique;
-}
-.school{
-  padding-top: 20px;
-  padding-left: 10%;
-}
-.company{
-  padding-left: 25%;
-}
-
-@media screen and (max-width: 850px) {
-  .details{
-    margin-inline: 5%;
-  }
-  .school, .company{
-    padding-left: 0;
-  }
-  .grid-container{
-    grid-template-columns: 1fr;
-  }
-  #banner{
-    height: auto;
-    width: 90vw;
-  }
 }
 </style>
