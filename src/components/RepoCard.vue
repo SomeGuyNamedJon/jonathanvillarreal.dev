@@ -87,12 +87,7 @@
         padding: 2em;
     }
     .name{
-        font-family: var(--alt-font);
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 75%;
-        display: block;
-        overflow: hidden;
+        font-family: var(--alt-font); 
     }
     .lang{
         margin: 0 auto;
@@ -137,7 +132,11 @@
 
     @media screen and (max-width: 520px) {
         .name{
-           width: 240px; 
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 240px;
+            display: block;
+            overflow: hidden;
         }
     }
 </style>
