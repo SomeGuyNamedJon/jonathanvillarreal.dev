@@ -91,6 +91,7 @@
     }
     .card:before{
         content: "";
+        opacity: 0.5;
         background-image: linear-gradient(
             165deg,
             transparent 0% 65%,
@@ -109,8 +110,8 @@
         z-index: -1;
     }
     .card:hover {
-        margin-inline: 4.5%;
-        padding-block: 2.5em; 
+        margin-inline: 4.8%;
+        padding-block: 2.2em; 
     }
     .card:hover:before {
         background-position: 90% 90%;
