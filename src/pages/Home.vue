@@ -37,7 +37,7 @@
         </div>
 
         <div class="Neofetch">
-            <img id="neofetch" src="@/assets/images/neofetch.png" height="300"/>
+            <img id="neofetch" src="@/assets/images/neofetch.png" width="560"/>
         </div>
         <div class="Linux blurb">
             <h2>My experience with Linux</h2>
@@ -74,7 +74,12 @@
     #neofetch{
         padding-block: 20px;
         padding-inline-end: 5px;
-        background-color: rgba(0, 0, 0, 0.26);
+        background-image: linear-gradient(
+            165deg,
+            transparent 0% 10%,
+            rgba(14, 14, 14, 0.75) 35%,
+            var(--deep-dark-purple) 100%
+            );
     }
     .Face{
         position: relative;
@@ -90,7 +95,8 @@
     .Neofetch {
         position: relative;
         top: 5%;
-        z-index: 1;
+        left: 5%;
+        z-index: 1; 
     }
 
     .Profile, .Linux{
@@ -103,15 +109,12 @@
     }
     
     @media screen and (max-width: 850px){
-        #face {
+        #face, #diploma, #neofetch {
             height: auto;
             width: 75vw;
             margin-bottom: 10%;
-        }
-        .Profile{
-            height: auto;
-        }
-        .FaceImage, .Profile, .School {
+        } 
+        .Face, .Diploma, .Neofetch, .Profile, .School, .Linux {
             position: static;
             margin-inline: 5%;
         }
