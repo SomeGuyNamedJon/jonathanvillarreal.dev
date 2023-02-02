@@ -10,7 +10,7 @@
 <template>
     <div v-for="(data, index) in pageJSON">
         <div class="grid-container">
-        <div class="school">
+        <div class="badge">
             <img :src='"/src/assets/images/"+data.logo' height="100">
             <h2>{{ data.school }}</h2>
             <h3>{{ data.degree }}</h3>
@@ -28,5 +28,19 @@
 </template>
 
 <style scoped>
-
+    .badge{
+        position: relative;
+        left: 1%;
+    }
+    .details {
+        position: relative;
+        right: 5%;
+        margin-right: 20%;
+    }
+    @media screen and (max-width: 850px){
+        .badge, .details {
+            position: static;
+            margin-inline: 5%;
+        }
+    }
 </style>

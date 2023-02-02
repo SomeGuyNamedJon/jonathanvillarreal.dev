@@ -10,7 +10,7 @@
 <template>
     <div v-for="(data, index) in pageJSON">
         <div class="grid-container">
-        <div class="company">
+        <div class="badge">
             <img :src='"/src/assets/images/"+data.logo' height="100">
             <h2>{{ data.company }}</h2>
             <p>{{ data.startdt }} - {{ data.enddt }} | {{ data.location }}</p>
@@ -27,11 +27,18 @@
 </template>
 
 <style scoped>
+    .badge{
+        position: relative;
+        left: 5%;
+    }
     .details {
-        margin-right: 35%;
+        position: relative;
+        right: 20%;
+        margin-right: 12%;
     }
     @media screen and (max-width: 850px){
-        .details {
+        .badge, .details {
+            position: static;
             margin-inline: 5%;
         }
     }
