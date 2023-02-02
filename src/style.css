@@ -114,11 +114,7 @@ button:focus-visible {
 @media screen and (max-width: 850px) {
   .grid-container{
     grid-template-columns: 1fr;
-  }
-  #banner{
-    height: auto;
-    width: 90vw;
-  }
+  } 
 }
 
 @media (prefers-color-scheme: light) {

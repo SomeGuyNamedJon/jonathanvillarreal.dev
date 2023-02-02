@@ -7,7 +7,7 @@
  <div class="PageView">
   <div class="Title">
     <img id="banner" src="@/assets/images/JonathanV.png" height="100"/>
-    <SocialLinks/>
+    <span class="Social"><SocialLinks/></span>
   </div>
   <NavBar/>
   <div class="RouterView">
@@ -32,6 +32,10 @@
   padding-block: 15px;
 }
 
+.Social {
+  width: fit-content;
+}
+
 .Footer {
   background-color: var(--purple);
   margin-top: 2%;
@@ -50,5 +54,14 @@ body{
   z-index: -1;
 }
 
+@media screen and (max-width: 475px){
+  .Social {
+    display: inline-block;
+  }
+  #banner{
+    height: auto;
+    width: 90vw;
+  }
+}
 
 </style>
