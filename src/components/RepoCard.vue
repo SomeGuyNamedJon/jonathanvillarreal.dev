@@ -43,7 +43,7 @@
 </script>
 
 <template>
-    <div v-if="repoData == 'ERR'" class="card">
+    <div v-if="repoData == 'ERR'" class="card-dull">
         <h2 style="text-align: center; color: #f00f0f">ERROR: REPOSITORY NOT FOUND</h2>
     </div>
     <div v-else class="card">
@@ -77,7 +77,7 @@
 </template>
 
 <style scoped>
-    .card {
+    .card, .card-dull {
         position: relative;
         background-color: rgba(0, 0, 0, 0.26);
         text-align: left;
@@ -91,13 +91,10 @@
     }
     .card:before{
         content: "";
-        opacity: 0.5;
         background-image: linear-gradient(
             165deg,
             transparent 0% 65%,
-            var(--dark-grey) 70%,
-            var(--dark-purple) 80%,
-            var(--deep-dark-purple) 100%
+            var(--purple) 100%
             );
         background-position: 0% 0%;
         background-size: 300% 300%;
