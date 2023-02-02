@@ -30,6 +30,7 @@
     .grid-container {
         margin-inline: 10%;
         border-radius: 5px;
+        padding-block: 2%;
         outline: var(--dark-grey) solid 5px;
         background-color: rgba(0, 0, 0, 0.26);
     }
