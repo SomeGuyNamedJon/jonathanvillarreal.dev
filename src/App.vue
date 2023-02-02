@@ -1,11 +1,13 @@
 <script setup>
   import NavBar from '@/components/NavBar.vue'
+  import SocialLinks from '@/components/SocialLinks.vue'
 </script>
 
 <template>
  <div class="PageView">
   <div class="Title">
     <img id="banner" src="@/assets/images/JonathanV.png" height="100"/>
+    <SocialLinks/>
   </div>
   <NavBar/>
   <div class="RouterView">
