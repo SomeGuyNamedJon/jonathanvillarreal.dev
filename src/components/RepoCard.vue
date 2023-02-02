@@ -46,37 +46,41 @@
     <div v-if="repoData == 'ERR'" class="card-dull">
         <h2 style="text-align: center; color: #f00f0f">ERROR: REPOSITORY NOT FOUND</h2>
     </div>
-    <div v-else class="card">
-        <a class="name" :href="repoData.html_url" target="_blank">{{ repoData.full_name }}</a>
+    <div v-else>
+        <a :href="repoData.html_url" target="_blank">
+            <div class="card">
+            <p class="name">{{ repoData.full_name }}</p>
 
-        <div class="contributorBlock">
-        <a v-for="contributor in contributorData" :href="contributor.html_url" target="_blank">
-            <img class="dot contributor" :src="contributor.avatar_url" :title="contributor.login"/>
+            <div class="contributorBlock">
+            <a v-for="contributor in contributorData" :href="contributor.html_url" target="_blank">
+                <img class="dot contributor" :src="contributor.avatar_url" :title="contributor.login"/>
+            </a>
+            </div>
+
+            <p class="desc">{{ repoData.description }}</p>
+            <p class="lang">
+                <span class="dot" :style="'background-color: '+colorsJSON[repoData.language]"></span>
+                {{ repoData.language }}
+            </p>
+            
+            <span class="countBlock">
+                <div class="count" v-if="repoData.stargazers_count > 0">
+                    <font-awesome-icon icon="star"/> &nbsp; {{ repoData.stargazers_count }}
+                </div>
+                <div class="count" v-if="repoData.subscribers_count > 0">
+                    <font-awesome-icon icon="eye"/> &nbsp; {{ repoData.subscribers_count }}
+                </div>
+                <div class="count" v-if="repoData.forks_count > 0">
+                    <font-awesome-icon icon="code-fork"/> &nbsp; {{ repoData.forks_count }}
+                </div>
+            </span>
+            </div>
         </a>
-        </div>
-
-        <p class="desc">{{ repoData.description }}</p>
-        <p class="lang">
-            <span class="dot" :style="'background-color: '+colorsJSON[repoData.language]"></span>
-            {{ repoData.language }}
-        </p>
-        
-        <span class="countBlock">
-            <div class="count" v-if="repoData.stargazers_count > 0">
-                <font-awesome-icon icon="star"/> &nbsp; {{ repoData.stargazers_count }}
-            </div>
-            <div class="count" v-if="repoData.subscribers_count > 0">
-                <font-awesome-icon icon="eye"/> &nbsp; {{ repoData.subscribers_count }}
-            </div>
-            <div class="count" v-if="repoData.forks_count > 0">
-                <font-awesome-icon icon="code-fork"/> &nbsp; {{ repoData.forks_count }}
-            </div>
-        </span>
     </div>
     
 </template>
 
-<style scoped>
+<style scoped> 
     .card, .card-dull {
         position: relative;
         background-color: rgba(0, 0, 0, 0.26);
@@ -110,19 +114,34 @@
         margin-inline: 4.8%;
         padding-block: 2.2em; 
     }
+    .card:hover > .name {
+        text-decoration: underline;
+    }
     .card:hover:before {
         background-position: 90% 90%;
         transform: scale(1.5, 1.5);
     }
+
+    a{
+        text-decoration: none !important;
+    }
     .name{
-        font-family: var(--alt-font); 
+        font-size: 1.2em;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .desc{
+        color: #f0f0f0 !important;
+        margin-inline-end: 1%;
     }
     .lang{
+        color: #f0f0f0 !important;
         margin: 0 auto;
         display: inline-block;
     }
     .count {
         float: right;
+        color: #f0f0f0 !important;
         margin-inline-start: 2vw;
     }
     .dot {
