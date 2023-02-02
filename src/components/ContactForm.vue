@@ -89,7 +89,7 @@
                         console.log('FAILED...', error)
                         return false
                     })
-                    if(this.email != '' && (this.topic != '' || this.comment != '')){
+                    if(this.email != ''){
                         emailjs.send("submit_service", "confirmation_msg", body)
                         .then(function() {
                             console.log('SUCCESS!')
