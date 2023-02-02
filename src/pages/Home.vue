@@ -1,5 +1,5 @@
 <template>
-    <div class="grid-container">
+    <div class="MainView">
         <div class="Face">
             <img id="face" src="@/assets/images/Me.jpg" height="375"/>
         </div>
@@ -56,7 +56,17 @@
     </div>
 </template>
 
-<style scoped> 
+<style scoped>
+    .MainView{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "Face Profile" 
+        "School Diploma"
+        "Neofetch Linux";
+    }
     .blurb {
         outline: var(--dark-grey) solid 5px;
         border-radius: 5px;
@@ -82,33 +92,54 @@
             );
     }
     .Face{
+        grid-area: Face;
         position: relative;
         top: 5%;
         left: 15%;
         z-index: 1;
     }
     .Diploma {
+        grid-area: Diploma;
         position: relative;
         right: 6%;
         top: 5%;
     }
     .Neofetch {
+        grid-area: Neofetch;
         position: relative;
         top: 5%;
         left: 5%;
         z-index: 1; 
     }
 
-    .Profile, .Linux{
+    .Profile {
+        grid-area: Profile;
+        position: relative;
+        right: 10%;
+    }
+    .Linux {
+        grid-area: Linux;
         position: relative;
         right: 10%;
     }
     .School{
+        grid-area: School;
         position: relative;
         left: 10%;
     }
     
     @media screen and (max-width: 850px){
+        .MainView {
+            grid-template-rows: min-content min-content min-content min-content min-content min-content;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "Face"
+            "Profile"
+            "Diploma"
+            "School"
+            "Neofetch"
+            "Linux";
+        }
         #face, #diploma, #neofetch {
             height: auto;
             width: 75vw;
