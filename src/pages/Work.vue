@@ -11,7 +11,7 @@
     <div v-for="(data, index) in pageJSON">
         <div class="grid-container">
         <div class="badge">
-            <img :src='"/src/assets/images/"+data.logo' height="100">
+            <img :src='"/assets/images/"+data.logo' height="100">
             <h2>{{ data.company }}</h2>
             <p>{{ data.startdt }} - {{ data.enddt }} | {{ data.location }}</p>
         </div>
