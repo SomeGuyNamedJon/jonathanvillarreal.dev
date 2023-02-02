@@ -83,6 +83,7 @@
         border-radius: 5px;
         margin-inline: 5%;
         margin-bottom: 50px;
+        padding: 2em;
     }
     .name{
         font-family: var(--alt-font);
