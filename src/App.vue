@@ -32,8 +32,15 @@
   padding-block: 15px;
 }
 
+#banner {
+  position: relative;
+  left: 3%;
+}
+
 .Social {
   width: fit-content;
+  position: relative;
+  left: 3%;
 }
 
 .Footer {
@@ -54,11 +61,13 @@ body{
   z-index: -1;
 }
 
-@media screen and (max-width: 475px){
+@media screen and (max-width: 550px){
   .Social {
+    position: static;
     display: inline-block;
   }
   #banner{
+    position: static;
     height: auto;
     width: 90vw;
   }
