@@ -50,7 +50,6 @@
 
 <style>
 .navContainer{
-    font-family: var(--alt-font);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -131,6 +130,7 @@
     .coverBar{
         visibility: visible;
         height: 30px;
+        padding-block: 5px;
     }
     .navBar {
         visibility: collapse;
@@ -140,11 +140,14 @@
         display: flex;
         text-align: justify;
         padding-inline-start: 0%;
+        padding-block: 5px;
         visibility: collapse;
         flex-direction: row;
     }
     .hamburgerMenu{
         display: block;
+        position: relative;
+        top: 5px;
     }
     #MenuIcon {
         transition: all .5s;
