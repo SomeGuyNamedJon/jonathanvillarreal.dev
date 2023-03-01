@@ -11,7 +11,7 @@
     <div class="content" v-for="(data, index) in pageJSON">
         <div class="flex-container">
         <div class="badge">
-            <img :src='"/assets/images/"+data.logo' height="200">
+            <img :src='"/assets/images/"+data.logo'>
         </div>
         <div class="details">
             <h2>{{ data.school }}</h2>
@@ -31,21 +31,7 @@
     img {
         -webkit-filter: drop-shadow(5px 5px 0 var(--dark-grey));
         filter: drop-shadow(5px 5px 0 var(--dark-grey));
-    }
-    .badge{
-        z-index: 10;
-    }
-    .details {
-        width: 75%;
-    }
-    @media screen and (max-width: 850px){
-        .badge, .details {
-            margin-inline: 5%;
-            width: auto;
-        }
-        img{
-            height: 200px;
-            padding-bottom: 25px;
-        }
+        max-width: 350px;
+        max-height: 200px;
     }
 </style>

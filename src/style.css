@@ -97,6 +97,11 @@ button:focus-visible {
   justify-content: center;
 }
 
+.badge {
+  z-index: 10;
+  width: 25%;
+}
+
 .content:nth-child(even) > .flex-container{
   flex-direction: row-reverse;
 }
@@ -112,6 +117,7 @@ button:focus-visible {
 
 .details{
   text-align: left;
+  width: 75%
 }
 .details dt{
   font-weight: bold;
@@ -127,10 +133,15 @@ button:focus-visible {
 }
 
 @media screen and (max-width: 850px) {
+  .badge, .details {
+      margin-inline: 5%;
+      width: auto;
+  }
   .badge{
     position: static !important;
+    padding-bottom: 25px;
   }
   .flex-container{
     flex-direction: column !important;
-  } 
+  }
 }
