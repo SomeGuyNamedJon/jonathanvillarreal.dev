@@ -29,16 +29,13 @@
 
 <style scoped>
     .badge{
-        position: relative;
         z-index: 10;
     }
     .details {
-        position: relative;
         width: 75%;
     }
     @media screen and (max-width: 850px){
         .badge, .details {
-            position: static;
             margin-inline: 5%;
             width: auto;
         }

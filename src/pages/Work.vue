@@ -26,19 +26,17 @@
     </div>
 </template>
 
-<style scoped>   
+<style scoped> 
     .badge{
-        position: relative;
         z-index: 10;
     }
     .details {
-        position: relative;
-        width: 50%;
-    }
+        width: 75%;
+    } 
     @media screen and (max-width: 850px){
         .badge, .details {
-            position: static;
             margin-inline: 5%;
+            width: auto;
         }
         img{
             padding-bottom: 25px;

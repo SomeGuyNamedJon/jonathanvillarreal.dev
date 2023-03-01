@@ -82,14 +82,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-.details{
-  text-align: left;
-}
-.details dt{
-  font-weight: bold;
-  font-style: oblique;
-}
-
 #app {
   width: 100vw;
   height: 100vh;
@@ -101,12 +93,30 @@ button:focus-visible {
 
 .flex-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content:nth-child(even) > .flex-container{
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
+.content:nth-child(odd) > .flex-container > .badge {
+    position: relative;
+    left: 12%;
+}
+.content:nth-child(even) > .flex-container > .badge {
+    position: relative;
+    right: 12%;
+}
+
+.details{
+  text-align: left;
+}
+.details dt{
+  font-weight: bold;
+  font-style: oblique;
+}
 .details{
   margin-inline: 10%;
   border-radius: 5px;
@@ -117,6 +127,9 @@ button:focus-visible {
 }
 
 @media screen and (max-width: 850px) {
+  .badge{
+    position: static !important;
+  }
   .flex-container{
     flex-direction: column !important;
   } 
