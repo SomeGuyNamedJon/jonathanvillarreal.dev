@@ -99,11 +99,14 @@ button:focus-visible {
   overflow-x: hidden;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fill, 1fr); 
+.flex-container {
+  display: flex;
 }
+
+.content:nth-child(even) > .flex-container{
+    flex-direction: row-reverse;
+}
+
 .details{
   margin-inline: 10%;
   border-radius: 5px;
@@ -114,7 +117,7 @@ button:focus-visible {
 }
 
 @media screen and (max-width: 850px) {
-  .grid-container{
-    grid-template-columns: 1fr;
+  .flex-container{
+    flex-direction: column !important;
   } 
 }

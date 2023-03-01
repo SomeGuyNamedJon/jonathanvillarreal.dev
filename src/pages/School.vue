@@ -8,10 +8,10 @@
 </script>
 
 <template>
-    <div v-for="(data, index) in pageJSON">
-        <div class="grid-container">
+    <div class="content" v-for="(data, index) in pageJSON">
+        <div class="flex-container">
         <div class="badge">
-            <img :src='"/assets/images/"+data.logo' height="250">
+            <img :src='"/assets/images/"+data.logo' height="200">
         </div>
         <div class="details">
             <h2>{{ data.school }}</h2>
@@ -30,13 +30,10 @@
 <style scoped>
     .badge{
         position: relative;
-        top: 20%;
         z-index: 10;
     }
     .details {
         position: relative;
-        right: 20%;
-        margin-right: 20%;
         width: 75%;
     }
     @media screen and (max-width: 850px){
