@@ -26,7 +26,11 @@
     </div>
 </template>
 
-<style scoped> 
+<style scoped>
+    img {
+        -webkit-filter: drop-shadow(5px 5px 0 var(--dark-grey));
+        filter: drop-shadow(5px 5px 0 var(--dark-grey));
+    }
     .badge{
         z-index: 10;
     }
