@@ -19,6 +19,7 @@
     <RepoCard user="SomeGuyNamedJon" repo="laptop-dotfiles"/>
     <h2>Game Projects</h2>
     <hr>
+    <RepoCard user="SomeGuyNamedJon" repo="PyngPong"/>
     <RepoCard user="SomeGuyNamedJon" repo="UntitledCubeRunner"/>
     <RepoCard user="SomeGuyNamedJon" repo="UnfinishedFPS"/>
     <RepoCard user="SomeGuyNamedJon" repo="PolygonDefender"/>
