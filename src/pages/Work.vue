@@ -11,11 +11,11 @@
     <div v-for="(data, index) in pageJSON">
         <div class="grid-container">
         <div class="badge">
-            <img :src='"/assets/images/"+data.logo' height="100">
-            <h2>{{ data.company }}</h2>
-            <p>{{ data.startdt }} - {{ data.enddt }} | {{ data.location }}</p>
+            <img :src='"/assets/images/"+data.logo' height="250">
         </div>
         <div class="details">
+            <h2>{{ data.company }}</h2>
+            <p>{{ data.startdt }} - {{ data.enddt }} | {{ data.location }}</p>
             <dl>
                 <dt>{{ data.title }}</dt>
                 <dd>{{ data.duties }}</dd>
@@ -29,7 +29,8 @@
 <style scoped>   
     .badge{
         position: relative;
-        left: 5%;
+        left: 10%;
+        z-index: 10;
     }
     .details {
         position: relative;
@@ -40,6 +41,9 @@
         .badge, .details {
             position: static;
             margin-inline: 5%;
+        }
+        img{
+            padding-bottom: 25px;
         }
     }
 </style>

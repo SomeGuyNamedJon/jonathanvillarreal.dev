@@ -83,7 +83,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 .details{
-  text-align: justify;
+  text-align: left;
 }
 .details dt{
   font-weight: bold;
@@ -102,10 +102,13 @@ button:focus-visible {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr); 
+}
+.details{
   margin-inline: 10%;
   border-radius: 5px;
-  padding-block: 2%;
+  padding-block: 10px;
+  padding-inline: 50px;
   outline: var(--dark-grey) solid 5px;
   background-color: rgba(0, 0, 0, 0.26);
 }
