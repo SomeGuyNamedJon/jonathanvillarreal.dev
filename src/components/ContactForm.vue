@@ -151,7 +151,7 @@
         </div>
 
         <div id="methodBox" :class="{'form-err' : methodErr}">
-        <label class="form-label">Prefered Contact Method</label>
+        <label class="form-label">Preferred Contact Method</label>
         <div class="methodOptions">
             <label for="contact-Email">
                 <input class="form-radio" type="radio" id="contact-Email" v-model="method" value="Email">                      
