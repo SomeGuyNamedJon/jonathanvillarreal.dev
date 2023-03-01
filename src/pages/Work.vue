@@ -30,7 +30,7 @@
     img {
         -webkit-filter: drop-shadow(5px 5px 0 var(--dark-grey));
         filter: drop-shadow(5px 5px 0 var(--dark-grey));
-        max-height: 200px;
-        max-width: 200px;
+        max-height: 250px;
+        max-width: 250px;
     }
 </style>
