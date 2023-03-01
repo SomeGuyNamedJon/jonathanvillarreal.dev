@@ -5,8 +5,8 @@
     <a href="https://www.linkedin.com/in/jonathan-villarreal-3a5a73136/" target="_blank">
         <font-awesome-icon class="link" icon="fa-brands fa-linkedin"/>
     </a>
-    <a href="https://twitter.com/named_jon" target="_blank">
-        <font-awesome-icon class="link" icon="fa-brands fa-twitter"/>
+    <a href="https://mastodon.social/@someguynamedjon" target="_blank">
+        <font-awesome-icon class="link" icon="fa-brands fa-mastodon"/>
     </a>
 </template>
 
