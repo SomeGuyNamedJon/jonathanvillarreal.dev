@@ -1,9 +1,10 @@
 <template>
-    <div class="MainView">
-        <div class="Face">
-            <img id="face" src="@/assets/images/Me.jpg" height="375"/>
+    <div class="content">
+        <div class="flex-container">
+        <div class="badge">
+            <img id="face" src="@/assets/images/Me.jpg"/>
         </div>
-        <div class="Profile blurb">
+        <div class="details">
             <h2>Who am I?</h2>
             <p>
                 Hi, I'm Jon, an aspiring software engineer and recent university graduate. 
@@ -17,10 +18,16 @@
                 Always looking forward towards expanding my knowledge and eager to make a name for myself.
             </p>
         </div>
-
-        <hr class="Line1"/>
-
-        <div class="School blurb">
+        </div>
+        <hr/>
+    </div>
+    
+    <div class="content">
+        <div class="flex-container">
+        <div class="badge">
+            <img id="diploma" src="@/assets/images/diploma.png"/>
+        </div>
+        <div class="details">
             <h2>Bachelor's in Computer Science</h2>
             <p>
                 I achieved my degree at the University of Texas at San Antonio. It was a pleasant experience
@@ -34,16 +41,16 @@
                 Other languages I touched briefly where Lisp, awk, BASH, and x86 assembly. 
             </p>
         </div>
-        <div class="Diploma">
-            <img id="diploma" src="@/assets/images/diploma.png" width="500"/>
         </div>
-
-        <hr class="Line2"/>
+        <hr/>
+    </div>
         
-        <div class="Neofetch">
-            <img id="neofetch" src="@/assets/images/neofetch.png" width="560"/>
+    <div class="content">
+        <div class="flex-container">
+        <div class="badge">
+            <img id="neofetch" src="@/assets/images/neofetch.png"/>
         </div>
-        <div class="Linux blurb">
+        <div class="details">
             <h2>My experience with Linux</h2>
             <p>
                 Linux is a big part of my life. I first gained a fascination with the operating system in high school when
@@ -57,29 +64,14 @@
                 EndeavourOS for my work and gaming machines configured using bspwm the tiling window manager.
             </p>
         </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
-    .MainView{
-        box-sizing: border-box;
-        display: grid;
-        grid-template-rows: 1fr min-content 1fr min-content 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "Face Profile"
-        "Line1 Line1"
-        "School Diploma"
-        "Line2 Line2"
-        "Neofetch Linux";
-    }
-    .blurb {
-        outline: var(--dark-grey) solid 5px;
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.26);
-        text-align: justify;
-        padding-inline: 10%;
-        padding-bottom: 5%;
+    #face{
+        position: relative;
+        left: 5%;
     }
 
     #face, #diploma, #neofetch{
@@ -96,71 +88,25 @@
             var(--deep-dark-purple) 100%
             );
     }
-    .Face{
-        grid-area: Face;
-        position: relative;
-        top: 5%;
-        left: 15%;
-        z-index: 1;
-    }
-    .Diploma {
-        grid-area: Diploma;
-        position: relative;
-        right: 6%;
-        top: 5%;
-    }
-    .Neofetch {
-        grid-area: Neofetch;
-        position: relative;
-        top: 5%;
-        left: 5%;
-        z-index: 1; 
+
+    .badge, .details{
+        width: 50%;
     }
 
-    .Profile {
-        grid-area: Profile;
-        position: relative;
-        right: 10%;
-    }
-    .Linux {
-        grid-area: Linux;
-        position: relative;
-        right: 10%;
-    }
-    .School{
-        grid-area: School;
-        position: relative;
-        left: 10%;
+    img{
+        max-width: 550px;
+        max-height: 400px;
     }
     
-    .Line1 {
-        grid-area: Line1;
-    }
-    .Line2 {
-        grid-area: Line2;
-    }
     @media screen and (max-width: 850px){
-        .MainView {
-            grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "Face"
-            "Profile"
-            "Line1"
-            "Diploma"
-            "School"
-            "Line2"
-            "Neofetch"
-            "Linux";
+        .badge{
+            width: 100%;
         }
         #face, #diploma, #neofetch {
+            position: static;
             height: auto;
-            width: 75vw;
+            max-width: 75%;
             margin-bottom: 10%;
         } 
-        .Face, .Diploma, .Neofetch, .Profile, .School, .Linux {
-            position: static;
-            margin-inline: 5%;
-        }
     }
 </style>
