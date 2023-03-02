@@ -25,7 +25,3 @@
     <RepoCard user="SomeGuyNamedJon" repo="PolygonDefender"/>
     <RepoCard user="e76971072" repo="Into-the-Unlit-Game"/>  
 </template>
-
-<style scoped>
-
-</style>
