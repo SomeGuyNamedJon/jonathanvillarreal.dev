@@ -14,7 +14,7 @@
     <RouterView/>
   </div>
   <div class="Footer">
-    <p>@2023 Jonathan Villarreal</p>
+    <p><font-awesome-icon icon="fa-regular fa-copyright" style="height: .9em;"/> 2023 Jonathan Villarreal</p>
   </div>
  </div>
 </template>
