@@ -8,5 +8,6 @@
     "msg":"Message",
     "msg_ph":"Write your message here...",
     "submit":"Submit",
-    "success":"Sent! I'll get back to you soon!"
+    "success":"Sent! I'll get back to you soon!",
+    "method":"Preferred Contact Method"
 }
