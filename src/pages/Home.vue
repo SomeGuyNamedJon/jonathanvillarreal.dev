@@ -35,7 +35,7 @@
     #pfetch{
         padding-top: 15px;
         padding-inline-end: 10px;
-        max-width: 475px !important;
+        max-width: 475px;
         background: linear-gradient(
             165deg,
             transparent 0% 0%,
