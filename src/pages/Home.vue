@@ -33,7 +33,8 @@
         outline: var(--dark-grey) solid 5px;
     }
     #pfetch{
-        padding-top: 20px;
+        padding-top: 15px;
+        padding-inline-end: 10px;
         max-width: 475px !important;
         background: linear-gradient(
             165deg,
