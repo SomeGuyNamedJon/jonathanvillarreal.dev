@@ -48,7 +48,7 @@
     <div class="content">
         <div class="flex-container">
         <div class="badge">
-            <img id="neofetch" src="@/assets/images/neofetch.png"/>
+            <img id="pfetch" src="@/assets/images/pfetch.png"/>
         </div>
         <div class="details">
             <h2>My experience with Linux</h2>
@@ -74,17 +74,18 @@
         left: 5%;
     }
 
-    #face, #diploma, #neofetch{
+    #face, #diploma, #pfetch{
         border-radius: 5px;
         outline: var(--dark-grey) solid 5px;
     }
-    #neofetch{
-        padding-block: 20px;
-        padding-inline-end: 5px;
-        background-image: linear-gradient(
+    #pfetch{
+        padding-top: 20px;
+        max-width: 475px !important;
+        background: linear-gradient(
             165deg,
-            transparent 0% 10%,
-            rgba(14, 14, 14, 0.75) 35%,
+            transparent 0% 0%,
+            rgba(14, 14, 14, 0.75) 30%,
+            rgba(26, 14, 43, 0.80) 60%,
             var(--deep-dark-purple) 100%
             );
     }
@@ -102,11 +103,10 @@
         .badge{
             width: 100%;
         }
-        #face, #diploma, #neofetch {
+        #face, #diploma, #pfetch {
             position: static;
             height: auto;
             max-width: 75%;
-            margin-bottom: 10%;
         } 
     }
 </style>
