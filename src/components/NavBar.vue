@@ -86,7 +86,7 @@
 }
 .coverBar {
     display: flex;
-    background-color: var(--deep-purple);
+    background-color: var(--dark-purple);
     flex-direction: row;
     justify-content: space-between;
     height: 0px;
@@ -104,7 +104,7 @@
     float: center;
 }
 .hamburgerMenu {
-    background-color: var(--dark-purple);
+    background-color: var(--deep-purple);
     position: relative;
     left: 50px;
     margin-left: auto;
@@ -143,6 +143,10 @@
         padding-block: 5px;
         visibility: collapse;
         flex-direction: row;
+    }
+    .navLink.router-link-active {
+        font-weight: bolder;
+        background-color: var(--dark-purple);
     }
     .hamburgerMenu{
         display: block;
