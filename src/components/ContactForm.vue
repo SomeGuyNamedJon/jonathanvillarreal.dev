@@ -248,7 +248,7 @@
     cursor: pointer;
 }
 .btn:hover {
-    background-color: var(--purple);
+    background-color: var(--deep-purple);
 }
 .success-box {
     border-radius: 15px;
