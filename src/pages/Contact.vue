@@ -8,5 +8,5 @@
 
 <template>
     <ContactForm/>
-    <SocialLinks size="75" gap="10"/>   
+    <SocialLinks size="75" gap="10" color="var(--purple)"/>   
 </template>

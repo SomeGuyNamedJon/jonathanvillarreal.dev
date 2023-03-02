@@ -1,14 +1,16 @@
 <script>
     export default{
         props:{
-            size: {type: Number, required: true},
-            gap: {type: Number, required: true}
+            size: {type: String, required: true},
+            gap: {type: String, required: true},
+            color: {type: String, required: true}
         },
         computed: {
             cssVars() {
                 return {
                     '--icon-size': this.size + 'px',
-                    '--gap': this.gap + 'px'
+                    '--gap': this.gap + 'px',
+                    '--color': this.color
                 }
             }
         }
@@ -28,14 +30,12 @@
 </template>
 
 <style scoped>
-    a {
-        color: #f0f0f0
-    }
-    a:hover{
-        color: #a0a0a0;
-    }
     .link{
+        color: #f0f0f0;
         height: var(--icon-size);
         margin-inline: var(--gap);
+    }
+    .link:hover{
+        color: var(--color);
     }
 </style>
