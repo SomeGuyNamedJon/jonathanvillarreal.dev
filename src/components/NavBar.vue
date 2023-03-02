@@ -39,7 +39,7 @@
         
         <input v-model="checked" type="checkbox" id="check"/>
         <label for="check" class="hamburgerMenu">
-            <font-awesome-icon id="MenuIcon" icon="chevron-left"/>
+            <font-awesome-icon id="MenuIcon" icon="caret-left"/>
         </label>
     </div>
     <div class="navBar">
@@ -119,8 +119,8 @@
 }
 #MenuIcon {
     position: relative;
-    right: 25%;
-    padding-top: 4px;
+    height: 30px;
+    right: 20px;
 }
 #check{
     display: none;
