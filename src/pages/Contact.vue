@@ -8,7 +8,7 @@
 
 <template>
     <ContactForm/>
-    <SocialLinks size="50"/>   
+    <SocialLinks size="75" gap="10"/>   
 </template>
 
 <style scoped>

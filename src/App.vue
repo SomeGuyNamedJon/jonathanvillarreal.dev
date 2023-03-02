@@ -7,7 +7,7 @@
  <div class="PageView">
   <div class="Title">
     <img id="banner" src="@/assets/images/JonathanV.png" height="100"/>
-    <span class="Social"><SocialLinks size="25"/></span>
+    <span class="Social"><SocialLinks size="25" gap="3"/></span>
   </div>
   <NavBar/>
   <div class="RouterView">

@@ -1,9 +1,15 @@
 <script>
     export default{
-        props:{size: {type: Number, required: true}},
+        props:{
+            size: {type: Number, required: true},
+            gap: {type: Number, required: true}
+        },
         computed: {
             cssVars() {
-                return {'--icon-size': this.size + 'px'}
+                return {
+                    '--icon-size': this.size + 'px',
+                    '--gap': this.gap + 'px'
+                }
             }
         }
     }
@@ -30,6 +36,6 @@
     }
     .link{
         height: var(--icon-size);
-        margin-inline: 3px;
+        margin-inline: var(--gap);
     }
 </style>
