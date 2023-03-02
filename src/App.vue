@@ -4,6 +4,7 @@
 </script>
 
 <template>
+<div class="background-overlay"></div>
  <div class="PageView">
   <div class="Title">
     <img id="banner" src="@/assets/images/JonathanV.png" height="100"/>
@@ -59,6 +60,20 @@ body{
   transform-style: preserve-3d;
   transform: translateZ(-1px);
   z-index: -1;
+}
+
+.background-overlay{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -webkit-mask-image: radial-gradient(black, transparent, transparent);
+  mask-image: radial-gradient(black, transparent, transparent);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  background: radial-gradient(#333 4px, transparent 1px) 0 0 / 15px 15px; 
+  transform-style: preserve-3d;
+  transform: translateZ(-1px);
+  z-index: -2;
 }
 
 @media screen and (max-width: 550px){
