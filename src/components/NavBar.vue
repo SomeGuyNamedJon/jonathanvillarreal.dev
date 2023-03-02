@@ -147,7 +147,7 @@
     .hamburgerMenu{
         display: block;
         position: relative;
-        top: 5px;
+        padding-block: 2px;
     }
     #MenuIcon {
         transition: all .5s;
@@ -155,7 +155,6 @@
     .shown #MenuIcon {
         rotate: -90deg;
     }
-
     .shown .navLink {
         width: 100%;
         font-size: larger;
@@ -163,11 +162,12 @@
     }
     .shown .coverBar {
         height: 0px;
+        padding: 0px;
     }
     .shown .navBar {
         display: block;
         height: max-content;
-        padding: 0px 0 0px 0;
+        padding: 0px;
         visibility: visible;
     }
     .shown.navContainer{
