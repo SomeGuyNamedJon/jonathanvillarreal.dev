@@ -99,7 +99,7 @@
         max-height: 400px;
     }
     
-    @media screen and (max-width: 850px){
+    @media screen and (max-width: 1150px){
         .badge{
             width: 100%;
         }
