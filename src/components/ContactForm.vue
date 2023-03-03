@@ -27,6 +27,16 @@
             }
         },
         methods: {
+            cssVars(e){
+                const {currentTarget: target} = e
+
+                const rect = target.getBoundingClientRect(),
+                        x = e.clientX - rect.left,
+                        y = e.clientY - rect.top
+                
+                target.style.setProperty("--relative-x", x+'px')
+                target.style.setProperty("--relative-y", y+'px')
+            },
             onSubmit(e){                
                 e.preventDefault();
                 console.log("Something")
@@ -121,7 +131,7 @@
 </script>
 
 <template>
-    <div class="contact-form">
+    <div class="contact-form" @mousemove="cssVars($event)">
     <form ref="contact-form" @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
             <label class="form-label">{{json.name}}</label>

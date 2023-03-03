@@ -4,22 +4,20 @@
 </script>
 
 <template>
-  <span ref="target" :style="'--mouse-x: '+x+'px; --mouse-y: '+y+'px'">
-  <div class="background-overlay"></div>
- <div class="PageView">
-  <div class="Title">
-    <img id="banner" src="@/assets/images/JonathanV.png" height="100"/>
-    <span class="Social"><SocialLinks size="25" gap="3" color="#a0a0a0"/></span>
+  <div class="background-overlay" ref="target" :style="'--mouse-x: '+x+'px; --mouse-y: '+y+'px'"></div>
+  <div class="PageView">
+    <div class="Title">
+      <img id="banner" src="@/assets/images/JonathanV.png" height="100"/>
+      <span class="Social"><SocialLinks size="25" gap="3" color="#a0a0a0"/></span>
+    </div>
+    <NavBar/>
+    <div class="RouterView">
+      <RouterView/>
+    </div>
+    <div class="Footer">
+      <p><font-awesome-icon icon="fa-regular fa-copyright" style="height: .9em;"/> 2023 Jonathan Villarreal</p>
+    </div>
   </div>
-  <NavBar/>
-  <div class="RouterView">
-    <RouterView/>
-  </div>
-  <div class="Footer">
-    <p><font-awesome-icon icon="fa-regular fa-copyright" style="height: .9em;"/> 2023 Jonathan Villarreal</p>
-  </div>
- </div>
- </span>
 </template>
 
 <script>
@@ -99,12 +97,12 @@ body{
   left: 0px;
   top: 0px;
   position: absolute;
-  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y),white,  var(--grey), transparent);
+  background: radial-gradient(circle at var(--relative-x) var(--relative-y), var(--grey), transparent);
   z-index: -5;
 }
 
 .contact-form:hover::before, .details:hover::before{
-  opacity: .05 !important;
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 550px){
