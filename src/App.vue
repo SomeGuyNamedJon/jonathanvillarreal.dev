@@ -86,11 +86,11 @@ body{
   z-index: -2;
 }
 
-.details{
+.contact-form, .details{
   position: relative;
 }
 
-.details::before{
+.contact-form::before, .details::before{
   opacity: 0;
   transition: opacity 500ms;
   content: "";
@@ -99,12 +99,12 @@ body{
   left: 0px;
   top: 0px;
   position: absolute;
-  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--grey), transparent 75%, transparent);
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y),white,  var(--grey), transparent);
   z-index: -5;
 }
 
-.details:hover::before{
-  opacity: 1 !important;
+.contact-form:hover::before, .details:hover::before{
+  opacity: .05 !important;
 }
 
 @media screen and (max-width: 550px){
