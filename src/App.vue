@@ -97,12 +97,12 @@ body{
   left: 0px;
   top: 0px;
   position: absolute;
-  background: radial-gradient(circle at var(--relative-x) var(--relative-y), var(--grey), transparent);
+  background: radial-gradient(circle at var(--relative-x) var(--relative-y), var(--deep-purple), transparent);
   z-index: -5;
 }
 
 .contact-form:hover::before, .details:hover::before{
-  opacity: 1 !important;
+  opacity: .5 !important;
 }
 
 @media screen and (max-width: 550px){
