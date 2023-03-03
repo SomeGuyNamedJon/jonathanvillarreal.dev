@@ -4,7 +4,8 @@
 </script>
 
 <template>
-  <div class="background-overlay" ref="target" :style="'--mouse-x: '+x+'px; --mouse-y: '+y+'px'"></div>
+  <span ref="target" :style="'--mouse-x: '+x+'px; --mouse-y: '+y+'px'">
+  <div class="background-overlay"></div>
  <div class="PageView">
   <div class="Title">
     <img id="banner" src="@/assets/images/JonathanV.png" height="100"/>
@@ -18,6 +19,7 @@
     <p><font-awesome-icon icon="fa-regular fa-copyright" style="height: .9em;"/> 2023 Jonathan Villarreal</p>
   </div>
  </div>
+ </span>
 </template>
 
 <script>
@@ -74,14 +76,35 @@ body{
   position: absolute;
   width: 100vw;
   height: 100vh;
-  -webkit-mask-image: radial-gradient(circle at calc(0% + var(--mouse-x)) calc(0% + var(--mouse-y)), black, transparent 10%, transparent);
-  mask-image: radial-gradient(circle at calc(0% + var(--mouse-x)) calc(0% + var(--mouse-y)), black, transparent 10%, transparent);
+  -webkit-mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 10%, transparent);
+  mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 10%, transparent);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
   background: radial-gradient(var(--deep-purple) 3px, transparent 1px) 0 0 / 15px 15px; 
   transform-style: preserve-3d;
   transform: translateZ(-1px);
   z-index: -2;
+}
+
+.details{
+  position: relative;
+}
+
+.details::before{
+  opacity: 0;
+  transition: opacity 500ms;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--grey), transparent 75%, transparent);
+  z-index: -5;
+}
+
+.details:hover::before{
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 550px){
