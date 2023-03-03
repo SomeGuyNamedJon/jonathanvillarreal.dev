@@ -13,11 +13,8 @@
     <div v-for="data in pageJSON">
         <h2>{{ data.title }}</h2>
         <hr>
-        <div class="content" v-for="repo in data.repos">
-            <div class="flex-container">
-                <div class="about">PLACEHOLDER</div>
-                <RepoCard :user="repo.user" :repo="repo.name"/>
-            </div>
+        <div v-for="repo in data.repos">
+            <RepoCard :user="repo.user" :repo="repo.name"/>
         </div>
     </div>
 </template>
