@@ -1,27 +1,36 @@
 <script>
+    import json from '@/assets/json/projects.json'
     import RepoCard from '@/components/RepoCard.vue'
     export default{
-        components: {RepoCard}
+        components: {RepoCard},
+        data(){
+            return {pageJSON: json}
+        }
     }
 </script>
 
 <template>
-    <h2>Web Development</h2>
-    <hr>
-    <RepoCard user="SomeGuyNamedJon" repo="someguynamedjon.github.io"/>
-    <RepoCard user="SomeGuyNamedJon" repo="martykitchenart"/>
-    <RepoCard user="SomeGuyNamedJon" repo="PersonalPage"/>
-    <RepoCard user="SomeGuyNamedJon" repo="CompanyEquipment"/>
-    <RepoCard user="beastboy241" repo="hotelReservation_CS3773"/>
-    <h2>Linux Stuff</h2>
-    <hr>
-    <RepoCard user="SomeGuyNamedJon" repo="barify"/>
-    <RepoCard user="SomeGuyNamedJon" repo="laptop-dotfiles"/>
-    <h2>Game Projects</h2>
-    <hr>
-    <RepoCard user="SomeGuyNamedJon" repo="PyngPong"/>
-    <RepoCard user="SomeGuyNamedJon" repo="UntitledCubeRunner"/>
-    <RepoCard user="SomeGuyNamedJon" repo="UnfinishedFPS"/>
-    <RepoCard user="SomeGuyNamedJon" repo="PolygonDefender"/>
-    <RepoCard user="e76971072" repo="Into-the-Unlit-Game"/>  
+    <div v-for="data in pageJSON">
+        <h2>{{ data.title }}</h2>
+        <hr>
+        <div class="content" v-for="repo in data.repos">
+            <div class="flex-container">
+                <div class="about">PLACEHOLDER</div>
+                <RepoCard :user="repo.user" :repo="repo.name"/>
+            </div>
+        </div>
+    </div>
 </template>
+
+<style scoped>
+    .about{
+        width: 25vw;
+    }
+
+    @media screen and (max-width: 850px){
+        .about{
+            width: 75vw;
+            padding-bottom: 25px;
+        }
+    }
+</style>

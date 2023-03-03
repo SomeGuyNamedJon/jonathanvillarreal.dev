@@ -80,8 +80,9 @@
     
 </template>
 
-<style scoped> 
+<style scoped>
     .card, .card-dull {
+        width: 50vw;
         position: relative;
         background-color: rgba(0, 0, 0, 0.26);
         text-align: left;
