@@ -82,7 +82,6 @@
 
 <style scoped>
     .card, .card-dull {
-        width: 50vw;
         position: relative;
         background-color: rgba(0, 0, 0, 0.26);
         text-align: left;
@@ -183,7 +182,6 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             width: 240px;
-            display: block;
             overflow: hidden;
         }
     }
