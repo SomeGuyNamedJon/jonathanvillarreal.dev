@@ -210,13 +210,13 @@
     margin: 8px 0;
     display: inline-block;
     color: #fff;
-    background-color: var(--background);
+    background-color: rgba(0, 0, 0, 0.35);
     border: 2px solid var(--purple);
     border-radius: 4px;
     box-sizing: border-box;
 }
 .form-input:disabled {
-    background-color: #444;
+    background-color: rgba(30, 30, 30, 0.5);
     border: 2px dotted #a0a0a0;
     color: #909090;
 }
