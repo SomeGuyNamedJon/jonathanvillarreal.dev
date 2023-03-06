@@ -85,8 +85,7 @@
         position: relative;
         background-color: rgba(0, 0, 0, 0.26);
         text-align: left;
-        outline: var(--dark-grey) solid 5px;
-        border-radius: 5px;
+        border-radius: 10px;
         margin-inline: 5%;
         margin-bottom: 50px;
         padding: 2em;
@@ -95,6 +94,7 @@
     }
     .card:before{
         content: "";
+        border-radius: inherit;
         background-image: linear-gradient(
             165deg,
             transparent 0% 65%,
