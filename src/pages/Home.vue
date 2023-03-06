@@ -25,7 +25,7 @@
         <div class="badge">
             <img :src='"/assets/images/"+data.picture' :id="data.imgID">
         </div>
-        <div class="details" @mousemove="cssVars($event)">
+        <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @wheel="cssVars($event)">
             <h2>{{ data.title }}</h2>
             <p>{{ data.blurb }}</p>
         </div>

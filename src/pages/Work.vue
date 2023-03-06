@@ -25,7 +25,7 @@
         <div class="badge">
             <img :src='"/assets/images/"+data.logo'>
         </div>
-        <div class="details" @mousemove="cssVars($event)">
+        <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @wheel="cssVars($event)">
             <h2>{{ data.company }}</h2>
             <p>{{ data.startdt }} - {{ data.enddt }} | {{ data.location }}</p>
             <dl>
