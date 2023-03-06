@@ -74,8 +74,8 @@ body{
   position: absolute;
   width: 100vw;
   height: 100vh;
-  -webkit-mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 10%, transparent);
-  mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 10%, transparent);
+  -webkit-mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 150px, transparent);
+  mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 150px, transparent);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
   background: radial-gradient(var(--deep-purple) 3px, transparent 1px) 0 0 / 15px 15px; 
@@ -86,6 +86,7 @@ body{
 
 .contact-form, .details{
   position: relative;
+  border-radius: 20px;
 }
 
 .contact-form::before, .details::before{
@@ -97,8 +98,9 @@ body{
   left: 0px;
   top: 0px;
   position: absolute;
-  background: radial-gradient(circle at var(--relative-x) var(--relative-y), var(--deep-purple), transparent);
+  background: radial-gradient(circle at var(--relative-x) var(--relative-y), var(--deep-purple), transparent 500px, transparent);
   z-index: -5;
+  border-radius: inherit;
 }
 
 .contact-form:hover::before, .details:hover::before{

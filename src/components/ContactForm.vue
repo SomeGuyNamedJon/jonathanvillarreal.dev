@@ -199,8 +199,7 @@
     padding-bottom: 3%;
     margin-inline: 10%;
     margin-bottom: 2.5%;
-    border-radius: 5px;
-    outline: var(--dark-grey) solid 5px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.26);
 }
 .form-input, .form-select{

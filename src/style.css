@@ -20,7 +20,7 @@
   font-weight: 400;
   
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -104,6 +104,11 @@ button:focus-visible {
   width: 25%;
 }
 
+.badge > img{
+  -webkit-filter: drop-shadow(7px 7px 3px var(--dark-grey));
+  filter: drop-shadow(7px 7px 3px var(--dark-grey));
+}
+
 .content:nth-child(even) > .flex-container{
   flex-direction: row-reverse;
 }
@@ -130,7 +135,6 @@ button:focus-visible {
   border-radius: 5px;
   padding-block: 10px;
   padding-inline: 50px;
-  outline: var(--dark-grey) solid 5px;
   background-color: rgba(0, 0, 0, 0.26);
 }
 

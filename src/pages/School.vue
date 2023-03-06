@@ -40,9 +40,7 @@
 </template>
 
 <style scoped>
-    img {
-        -webkit-filter: drop-shadow(5px 5px 0 var(--dark-grey));
-        filter: drop-shadow(5px 5px 0 var(--dark-grey));
+    img { 
         max-width: 350px;
         max-height: 200px;
     }

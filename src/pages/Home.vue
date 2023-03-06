@@ -42,18 +42,18 @@
 
     #face, #diploma, #pfetch{
         border-radius: 5px;
-        outline: var(--dark-grey) solid 5px;
     }
     #pfetch{
         padding-top: 15px;
         padding-inline-end: 10px;
         max-width: 475px;
+        outline: var(--deep-purple) solid 3px;
         background: linear-gradient(
             165deg,
             transparent 0% 0%,
-            rgba(14, 14, 14, 0.75) 30%,
-            rgba(26, 14, 43, 0.80) 60%,
-            var(--deep-dark-purple) 100%
+            rgba(14, 14, 14, 0.2) 30%,
+            rgba(73, 36, 136, 0.4) 60%,
+            var(--dark-purple) 100%
             );
     }
 
