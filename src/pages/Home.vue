@@ -41,7 +41,7 @@
     }
 
     #face, #diploma, #pfetch{
-        border-radius: 5px;
+        border-radius: 15px;
     }
     #pfetch{
         padding-top: 15px;
