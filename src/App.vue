@@ -74,8 +74,8 @@ body{
   position: absolute;
   width: 100vw;
   height: 100vh;
-  -webkit-mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 150px, transparent);
-  mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 150px, transparent);
+  -webkit-mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 100px, transparent);
+  mask-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), black, transparent 100px, transparent);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
   background: radial-gradient(var(--deep-purple) 3px, transparent 1px) 0 0 / 15px 15px; 
@@ -86,10 +86,13 @@ body{
 
 .contact-form, .details{
   position: relative;
-  border-radius: 20px;
+  border-radius: 10px;
+  outline: rgba(0, 0, 0, 0.11) solid 5px;
+  outline-offset: -5px;
 }
 
 .contact-form::before, .details::before{
+  --size: 100%;
   opacity: 0;
   transition: opacity 500ms;
   content: "";
@@ -98,13 +101,17 @@ body{
   left: 0px;
   top: 0px;
   position: absolute;
-  background: radial-gradient(circle at var(--relative-x) var(--relative-y), var(--deep-purple), transparent 500px, transparent);
+  background: radial-gradient(circle at var(--relative-x) var(--relative-y), rgba(103, 58, 183, .75), transparent var(--size));
   z-index: -5;
   border-radius: inherit;
 }
 
+.contact-form::before{
+  --size: 50% !important;
+}
+
 .contact-form:hover::before, .details:hover::before{
-  opacity: .5 !important;
+  opacity: .25 !important;
 }
 
 @media screen and (max-width: 550px){
