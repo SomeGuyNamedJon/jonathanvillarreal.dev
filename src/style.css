@@ -105,8 +105,8 @@ button:focus-visible {
 }
 
 .badge > img{
-  -webkit-filter: drop-shadow(7px 7px 3px var(--dark-grey));
-  filter: drop-shadow(7px 7px 3px var(--dark-grey));
+  -webkit-filter: drop-shadow(7px 7px 0 rgba(0,0,0,.5));
+  filter: drop-shadow(7px 7px 0 rgba(0,0,0,.5));
 }
 
 .content:nth-child(even) > .flex-container{
@@ -135,7 +135,6 @@ button:focus-visible {
   border-radius: 5px;
   padding-block: 10px;
   padding-inline: 50px;
-  background-color: rgba(0, 0, 0, 0.26);
 }
 
 @media screen and (max-width: 1150px) {

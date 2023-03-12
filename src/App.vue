@@ -87,8 +87,9 @@ body{
 .contact-form, .details{
   position: relative;
   border-radius: 10px;
-  outline: rgba(0, 0, 0, 0.11) solid 5px;
-  outline-offset: -5px;
+  outline: rgba(0, 0, 0, 0.25) solid 6px;
+  outline-offset: -6px;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .contact-form::before, .details::before{

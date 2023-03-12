@@ -35,13 +35,20 @@
 </template>
 
 <style scoped>
+    .badge > img{
+        border-radius: 10px;
+        -webkit-filter: none !important;
+        filter: none !important;
+    }
+
     #face{
         position: relative;
         left: 5%;
     }
 
-    #face, #diploma, #pfetch{
-        border-radius: 15px;
+    #diploma{
+        outline: rgba(0, 0, 0, 0.25) solid 5px;
+        outline-offset: -5px;
     }
     #pfetch{
         padding-top: 15px;

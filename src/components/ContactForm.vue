@@ -200,7 +200,6 @@
     margin-inline: 10%;
     margin-bottom: 2.5%;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.26);
 }
 .form-input, .form-select{
     width: 100%;
