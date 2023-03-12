@@ -247,7 +247,7 @@
 }
 .btn{
     width: 100%;
-    background-color: var(--purple);
+    background-color: var(--deep-purple);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -256,7 +256,7 @@
     cursor: pointer;
 }
 .btn:hover {
-    background-color: var(--deep-purple);
+    background-color: var(--purple);
 }
 .success-box {
     border-radius: 15px;
@@ -330,12 +330,12 @@ input + svg {
 .form-radio:hover + svg,
 .form-radio:focus + svg,
 .form-check:hover + svg {
-  fill: var(--purple) !important;
+  fill: var(--light-purple) !important;
 }
 
 .form-radio:checked + svg,
 .form-check:checked + svg {
-  fill: var(--deep-purple) !important;
+  fill: var(--purple) !important;
 }
 
 input.form-check {

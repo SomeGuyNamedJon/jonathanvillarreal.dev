@@ -3,10 +3,10 @@
 :root {
   --main-font: Asap Condensed, Inter, Avenir, Helvetica, Arial, sans-serif;
   --alt-font: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --light-purple: #9b70ff;
   --purple: #673ab7;
   --deep-purple: #4f3789;
   --dark-purple: #442e79;
-  --deep-dark-purple: #1e0d46;
   --off-white: #f0f0f0;
   --err-red: #ff2222;
   --success-green: #22cc77aa;
