@@ -35,6 +35,14 @@
 </template>
 
 <style scoped>
+    .badge, .details{
+        width: 50%;
+    }
+
+    img{
+        max-width: 550px;
+        max-height: 500px;
+    }
     .badge > img{
         border-radius: 10px;
         -webkit-filter: none !important;
@@ -44,13 +52,15 @@
     #face{
         border-radius: 50%;
         position: relative;
-        outline: rgba(0, 0, 0, 0.25) solid 15px;
-        outline-offset: -15px;
-        left: 10%;
+        outline: rgba(0, 0, 0, 0.1) solid 10px;
+        outline-offset: -10px;
+        left: 5%;
+        height: 425px !important;
+        width: 425px !important;
+        object-fit: cover;
     }
-
     #diploma{
-        outline: var(--purple) solid 4px;
+        outline: var(--purple) solid 5px;
         outline-offset: -8px;
     }
     #pfetch{
@@ -66,15 +76,6 @@
             );
     }
 
-    .badge, .details{
-        width: 50%;
-    }
-
-    img{
-        max-width: 550px;
-        max-height: 400px;
-    }
-    
     @media screen and (max-width: 1150px){
         .badge{
             width: 100%;
