@@ -82,6 +82,8 @@
 
 <style scoped>
     .card, .card-dull {
+        width: 500px;
+        height: 100%;
         position: relative;
         outline: rgba(0, 0, 0, 0.25) solid 6px;
         outline-offset: -6px;
@@ -164,6 +166,13 @@
 
     .contributor:hover{
         outline: #a0a0a0 solid 2px;
+    }
+
+    @media screen and (max-width: 1220px) {
+        .card, .card-dull, .card:hover{
+            width: 70vw;
+            margin-inline: auto;
+        } 
     }
 
     @media screen and (max-width: 640px) {  
