@@ -54,9 +54,9 @@
         position: relative;
         outline: rgba(0, 0, 0, 0.1) solid 10px;
         outline-offset: -10px;
-        left: 5%;
-        height: 425px !important;
-        width: 425px !important;
+        left: 6%;
+        height: 425px;
+        width: 425px;
         object-fit: cover;
     }
     #diploma{
