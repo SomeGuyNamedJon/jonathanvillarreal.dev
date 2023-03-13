@@ -37,12 +37,23 @@
 }
 
 .Title {
+  position: relative;
   padding-block: 15px;
   background-image: linear-gradient(
             180deg,
             rgba(0,0,0,0.25) 0% 0%,
             var(--deep-purple) 95%
             );
+}
+
+.Title::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: var(--deep-purple);
+  top: 95%;
+  left: 0;
 }
 
 #banner {

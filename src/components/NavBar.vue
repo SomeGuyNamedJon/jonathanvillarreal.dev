@@ -52,7 +52,7 @@
 .navContainer{
     position: -webkit-sticky;
     position: sticky;
-    top: 5px;
+    top: 0;
     z-index: 999;
 }
 
@@ -62,8 +62,6 @@
     grid-area: NavBar;
     background-color: var(--purple);
     margin-bottom: 5vh;
-    position: relative;
-    top: -5px;
 }
 
 .navLink {
@@ -129,16 +127,12 @@
 }
 
 @media screen and (max-width: 825px) {
-    .navContainer{
-        top: 0;
-    }
     .coverBar{
         visibility: visible;
         height: 30px;
         padding-bottom: 5px;
     }
     .navBar {
-        position: static;
         visibility: collapse;
         height: 0px;
     }
