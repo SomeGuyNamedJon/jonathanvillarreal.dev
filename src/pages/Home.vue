@@ -59,6 +59,7 @@
         width: 425px;
         object-fit: cover;
         object-position: -135px;
+        transition: border-radius .25s ease, width .5s ease-out;
     }
     #diploma{
         outline: var(--dark-purple) double 10px;
@@ -80,6 +81,11 @@
     @media screen and (max-width: 1150px){
         .badge{
             width: 100%;
+        }
+        #face {
+            object-position: 0;
+            border-radius: 100px;
+            width: 75% !important;
         }
         #face, #diploma, #pfetch {
             position: static;
