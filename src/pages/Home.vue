@@ -52,8 +52,8 @@
     #face{
         border-radius: 50%;
         position: relative;
-        outline: rgba(0, 0, 0, 0.1) solid 10px;
-        outline-offset: -10px;
+        outline: rgba(0, 0, 0, 0.1) solid 12px;
+        outline-offset: -12px;
         left: 6%;
         height: 425px;
         width: 425px;
@@ -61,7 +61,7 @@
         object-position: -135px;
     }
     #diploma{
-        outline: var(--purple) solid 5px;
+        outline: var(--dark-purple) double 10px;
         outline-offset: -8px;
     }
     #pfetch{
