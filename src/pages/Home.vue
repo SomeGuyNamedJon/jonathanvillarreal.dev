@@ -58,6 +58,7 @@
         height: 425px;
         width: 425px;
         object-fit: cover;
+        object-position: -135px;
     }
     #diploma{
         outline: var(--purple) solid 5px;
