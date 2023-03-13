@@ -83,7 +83,9 @@
 <style scoped>
     .card, .card-dull {
         position: relative;
-        background-color: rgba(0, 0, 0, 0.26);
+        outline: rgba(0, 0, 0, 0.25) solid 6px;
+        outline-offset: -6px;
+        background-color: rgba(0, 0, 0, 0.45);
         text-align: left;
         border-radius: 10px;
         margin-inline: 5%;
