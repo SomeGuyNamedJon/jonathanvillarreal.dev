@@ -25,7 +25,7 @@
         <div class="badge">
             <img :src='"/assets/images/"+data.picture' :id="data.imgID">
         </div>
-        <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @wheel="cssVars($event)">
+        <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
             <h2>{{ data.title }}</h2>
             <p>{{ data.blurb }}</p>
         </div>
@@ -42,24 +42,26 @@
     }
 
     #face{
+        border-radius: 50%;
         position: relative;
-        left: 5%;
+        outline: rgba(0, 0, 0, 0.25) solid 15px;
+        outline-offset: -15px;
+        left: 10%;
     }
 
     #diploma{
-        outline: rgba(0, 0, 0, 0.25) solid 5px;
-        outline-offset: -5px;
+        outline: var(--purple) solid 4px;
+        outline-offset: -8px;
     }
     #pfetch{
         padding-top: 15px;
         padding-inline-end: 10px;
         max-width: 475px;
-        outline: var(--deep-purple) solid 3px;
+        outline: var(--deep-purple) solid 5px;
         background: linear-gradient(
             165deg,
-            transparent 0% 0%,
-            rgba(14, 14, 14, 0.2) 30%,
-            rgba(73, 36, 136, 0.4) 60%,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(73, 36, 136, 0.6) 60%,
             var(--dark-purple) 100%
             );
     }

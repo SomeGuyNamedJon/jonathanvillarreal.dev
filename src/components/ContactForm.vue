@@ -131,7 +131,7 @@
 </script>
 
 <template>
-    <div class="contact-form" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @wheel="cssVars($event)">
+    <div class="contact-form" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
     <form ref="contact-form" @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
             <label class="form-label">{{json.name}}</label>

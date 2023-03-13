@@ -25,7 +25,7 @@
         <div class="badge">
             <img :src='"/assets/images/"+data.logo'>
         </div>
-        <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @wheel="cssVars($event)">
+        <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
             <h2>{{ data.school }}</h2>
             <h3>{{ data.degree }}</h3>
             <p>Graduated {{ data.graduated }} | {{ data.gpa }}</p>
