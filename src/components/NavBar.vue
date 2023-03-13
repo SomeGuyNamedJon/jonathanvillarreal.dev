@@ -138,6 +138,7 @@
         padding-bottom: 5px;
     }
     .navBar {
+        position: static;
         visibility: collapse;
         height: 0px;
     }
