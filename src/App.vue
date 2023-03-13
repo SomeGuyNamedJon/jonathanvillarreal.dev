@@ -37,8 +37,12 @@
 }
 
 .Title {
-  background-color: var(--deep-purple);
   padding-block: 15px;
+  background-image: linear-gradient(
+            180deg,
+            rgba(0,0,0,0.25) 0% 0%,
+            var(--deep-purple) 95%
+            );
 }
 
 #banner {
