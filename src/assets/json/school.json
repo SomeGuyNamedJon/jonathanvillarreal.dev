@@ -1,7 +1,7 @@
 [
 {
     "school":"University of Texas at San Antonio",
-    "logo":"UTSA.png",
+    "logo":"UTSA.wepb",
     "graduated":"May 2022",
     "degree":"Bachelor's of Computer Science",
     "gpa":"3.31 GPA",
@@ -12,7 +12,7 @@
 },
 {
     "school":"San Antonio College",
-    "logo":"SAC.png",
+    "logo":"SAC.wepb",
     "graduated":"May 2017",
     "degree":"Associate of Applied Science in Computer Programming",
     "gpa":"3.236 GPA",
@@ -24,7 +24,7 @@
 },
 {
     "school":"Theodore Roosevelt High School",
-    "logo":"Roosevelt.png",
+    "logo":"Roosevelt.wepb",
     "graduated":"Jun 2013",
     "degree":"High School Diploma",
     "gpa":"ETA Program",
