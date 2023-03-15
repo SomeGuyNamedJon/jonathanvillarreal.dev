@@ -23,7 +23,7 @@
     <div class="content" v-for="(data, index) in pageJSON">
         <div class="flex-container">
         <div class="badge">
-            <img :src='"/assets/images/"+data.picture' :id="data.imgID">
+            <img :src='"/assets/images/"+data.picture' :id="data.imgID" height="500">
         </div>
         <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
             <h2>{{ data.title }}</h2>
@@ -54,7 +54,7 @@
         position: relative;
         outline: rgba(0, 0, 0, 0.1) solid 12px;
         outline-offset: -12px;
-        left: 6%;
+        left: 5%;
         height: 425px;
         width: 425px;
         object-fit: cover;
@@ -62,13 +62,14 @@
         transition: border-radius .25s ease, width .5s ease-out;
     }
     #diploma{
+        max-height: 400px;
         outline: var(--dark-purple) double 10px;
         outline-offset: -8px;
     }
     #pfetch{
         padding-top: 15px;
         padding-inline-end: 10px;
-        max-width: 475px;
+        max-height: 250px;
         outline: var(--deep-purple) solid 5px;
         background: linear-gradient(
             165deg,
