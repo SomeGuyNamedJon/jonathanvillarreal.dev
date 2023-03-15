@@ -1,7 +1,7 @@
 [
 {
     "company":"UPS Warehouse",
-    "logo":"UPS.wepb",
+    "logo":"UPS.webp",
     "startdt":"Jul 2020",
     "enddt":"Jan 2021",
     "location":"San Antonio, TX",
@@ -10,7 +10,7 @@
 },
 {
     "company":"SeaWorld San Antonio",
-    "logo":"seaworld.wepb",
+    "logo":"seaworld.webp",
     "startdt":"Jun 2019",
     "enddt":"Aug 2019",
     "location":"San Antonio, TX",
@@ -19,7 +19,7 @@
 },
 {
     "company":"Max Food Mart",
-    "logo":"maxfoodmart.wepb",
+    "logo":"maxfoodmart.webp",
     "startdt":"Dec 2017",
     "enddt":"Mar 2018",
     "location":"San Antonio, TX",
@@ -28,7 +28,7 @@
 },
 {
     "company":"Bill Miller's BBQ",
-    "logo":"billmillersbbq.wepb",
+    "logo":"billmillersbbq.webp",
     "startdt":"Mar 2014",
     "enddt":"Aug 2014",
     "location":"San Antonio, TX",
@@ -37,7 +37,7 @@
 },
 {
     "company":"Bolner's Fiesta Products",
-    "logo":"bolnersfiesta.wepb",
+    "logo":"bolnersfiesta.webp",
     "startdt":"Feb 2014",
     "enddt":"Mar 2014",
     "location":"San Antonio, TX",
