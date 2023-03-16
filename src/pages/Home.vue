@@ -23,7 +23,7 @@
     <div class="content" v-for="(data, index) in pageJSON">
         <div class="flex-container">
         <div class="badge">
-            <img :src='"/assets/images/"+data.picture' :id="data.imgID" height="500">
+            <img :src='"/assets/images/"+data.picture' :id="data.imgID" :alt="data.imgALT" height="500">
         </div>
         <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
             <h2>{{ data.title }}</h2>

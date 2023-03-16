@@ -2,6 +2,7 @@
 {
     "school":"University of Texas at San Antonio",
     "logo":"UTSA.webp",
+    "imgALT":"Road Runner mascot logo for the University of Texas at San Antonio; artistic representation of a road runner's head",
     "graduated":"May 2022",
     "degree":"Bachelor's of Computer Science",
     "gpa":"3.31 GPA",
@@ -13,6 +14,7 @@
 {
     "school":"San Antonio College",
     "logo":"SAC.webp",
+    "imgALT":"Logo for Alamo Colleges; an abstract representation of the alamo using the colors for San Antonio College, (blue and teal)",
     "graduated":"May 2017",
     "degree":"Associate of Applied Science in Computer Programming",
     "gpa":"3.236 GPA",
@@ -25,6 +27,7 @@
 {
     "school":"Theodore Roosevelt High School",
     "logo":"Roosevelt.webp",
+    "imgALT":"Rough Rider logo for Theodore Roosevelt NEISD high school; a man riding a horse carrying a flag with the letters TR above",
     "graduated":"Jun 2013",
     "degree":"High School Diploma",
     "gpa":"ETA Program",

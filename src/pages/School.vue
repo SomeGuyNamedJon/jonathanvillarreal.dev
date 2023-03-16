@@ -23,7 +23,7 @@
     <div class="content" v-for="(data, index) in pageJSON">
         <div class="flex-container">
         <div class="badge">
-            <img :src='"/assets/images/"+data.logo' height="500">
+            <img :src='"/assets/images/"+data.logo' :alt="data.imgALT" height="500">
         </div>
         <div class="details" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
             <h2>{{ data.school }}</h2>
