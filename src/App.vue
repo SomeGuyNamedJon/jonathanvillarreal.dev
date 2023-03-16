@@ -15,7 +15,7 @@
       <RouterView/>
     </div>
     <div class="Footer">
-      <p><font-awesome-icon icon="fa-regular fa-copyright" style="height: .9em;"/> 2023 Jonathan Villarreal</p>
+      <p>🄯 2023 Jonathan Villarreal | All trademarks & copyrights belong to their respective owners. Use of these marks does not imply endorsement by either party.</p>
     </div>
   </div>
 </template>
@@ -70,6 +70,7 @@
 .Footer {
   background-color: var(--purple);
   margin-top: 2%;
+  font-size: medium;
 }
 
 .Footer > p {
