@@ -7,7 +7,6 @@
         {"user":"SomeGuyNamedJon", "name":"someguynamedjon.github.io"},
         {"user":"SomeGuyNamedJon", "name":"martykitchenart"},
         {"user":"SomeGuyNamedJon", "name":"PersonalPage"},
-        {"user":"SomeGuyNamedJon", "name":"CompanyEquipment"},
         {"user":"beastboy241", "name":"hotelReservation_CS3773"}
     ]
 },
@@ -18,8 +17,6 @@
     "repos":[
         {"user":"SomeGuyNamedJon", "name":"PyngPong"},
         {"user":"SomeGuyNamedJon", "name":"UntitledCubeRunner"},
-        {"user":"SomeGuyNamedJon", "name":"UnfinishedFPS"},
-        {"user":"SomeGuyNamedJon", "name":"PolygonDefender"},
         {"user":"e76971072", "name":"Into-the-Unlit-Game"}
     ]
 },
