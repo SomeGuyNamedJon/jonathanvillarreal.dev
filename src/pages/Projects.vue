@@ -1,6 +1,9 @@
 <script>
     import json from '@/assets/json/projects.json'
-    import RepoCard from '@/components/RepoCard.vue'
+    import { defineAsyncComponent } from 'vue'
+    const RepoCard = defineAsyncComponent(() => 
+        import("@/components/RepoCard.vue")
+    )
     export default{
         components: {RepoCard},
         data(){

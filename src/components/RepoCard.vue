@@ -43,10 +43,14 @@
 </script>
 
 <template>
-    <div v-if="repoData == 'ERR'" class="card-dull">
-        <h2 style="text-align: center; color: #f00f0f">ERROR: REPOSITORY NOT FOUND</h2>
+    <Suspense>
+    <template #fallback>
+    <div class="card-dull">
+        LOADING...
     </div>
-    <div v-else>
+    </template>
+    <template #default>
+    <div>
         <a :href="repoData.html_url" target="_blank">
             <div class="card">
             <p class="name">{{ repoData.full_name }}</p>
@@ -77,6 +81,8 @@
             </div>
         </a>
     </div>
+    </template>
+    </Suspense>
     
 </template>
 
