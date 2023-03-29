@@ -131,12 +131,7 @@
 </script>
 
 <template>
-    <Suspense>
-    <template #fallback>
-        <div class="form-dull">
-            <p>¯\_(ツ)_/¯</p>
-        </div>
-    </template>
+<Suspense>
     <template #default>
     <div class="contact-form" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
     <form ref="contact-form" @submit="onSubmit"> 
@@ -199,7 +194,12 @@
     <div v-if="success" class="success-box">{{json.success}}</div>
     </div>
     </template>
-    </Suspense>
+    <template #fallback>
+        <div class="form-dull">
+            <p>¯\_(ツ)_/¯</p>
+        </div>
+    </template>
+</Suspense>
 </template>
 
 <style scoped>

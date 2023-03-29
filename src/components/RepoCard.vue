@@ -2,6 +2,7 @@
     import colors from '@/assets/json/colors.json'
     import { ref } from 'vue'
     import GithubAPI from '@/services/GithubAPI'
+import { watchIgnorable } from '@vueuse/shared'
     export default {
         props: {
             user: {type: String, required: true},
@@ -43,12 +44,7 @@
 </script>
 
 <template>
-    <Suspense>
-    <template #fallback>
-    <div class="card-dull">
-        <p>LOADING...</p>
-    </div>
-    </template>
+<Suspense>
     <template #default>
     <div>
         <a :href="repoData.html_url" target="_blank">
@@ -83,8 +79,12 @@
         </a>
     </div>
     </template>
-    </Suspense>
-    
+    <template #fallback>
+    <div class="card-dull">
+        <h1>LOADING...</h1>
+    </div>
+    </template>
+</Suspense> 
 </template>
 
 <style scoped>
