@@ -1,6 +1,9 @@
 <script>
-    import ContactForm from '@/components/ContactForm.vue'
+    import { defineAsyncComponent } from 'vue';
     import SocialLinks from '../components/SocialLinks.vue';
+    const ContactForm = defineAsyncComponent(() =>
+        import("../components/ContactForm.vue")
+    )
     export default{
         components: {ContactForm, SocialLinks}
     }

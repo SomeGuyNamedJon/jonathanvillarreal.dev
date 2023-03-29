@@ -131,6 +131,13 @@
 </script>
 
 <template>
+    <Suspense>
+    <template #fallback>
+        <div class="form-dull">
+            <p>¯\_(ツ)_/¯</p>
+        </div>
+    </template>
+    <template #default>
     <div class="contact-form" @mouseenter="cssVars($event)" @mousemove="cssVars($event)" @touchmove="cssVars($event)" @wheel="cssVars($event)">
     <form ref="contact-form" @submit="onSubmit"> 
         <div id="nameBox" :class="{'form-err' : nameErr}">
@@ -191,15 +198,20 @@
     </form>
     <div v-if="success" class="success-box">{{json.success}}</div>
     </div>
+    </template>
+    </Suspense>
 </template>
 
 <style scoped>
-.contact-form {
+.contact-form, .form-dull {
     padding-top: 2.5%;
     padding-bottom: 3%;
     margin-inline: 10%;
     margin-bottom: 2.5%;
     border-radius: 20px;
+}
+.form-dull{
+    color: #555 !important;
 }
 .form-input, .form-select{
     width: 100%;
