@@ -2,7 +2,6 @@
     import colors from '@/assets/json/colors.json'
     import { ref } from 'vue'
     import GithubAPI from '@/services/GithubAPI'
-import { watchIgnorable } from '@vueuse/shared'
     export default {
         props: {
             user: {type: String, required: true},
