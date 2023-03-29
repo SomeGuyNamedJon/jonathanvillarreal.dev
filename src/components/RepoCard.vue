@@ -46,7 +46,7 @@
     <Suspense>
     <template #fallback>
     <div class="card-dull">
-        LOADING...
+        <p>LOADING...</p>
     </div>
     </template>
     <template #default>
