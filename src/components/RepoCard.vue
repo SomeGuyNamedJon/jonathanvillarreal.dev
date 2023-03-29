@@ -61,7 +61,8 @@
             </a>
             </div>
 
-            <p class="desc">{{ repoData.description }}</p>
+            <p v-if="repoData.description" class="desc">{{ repoData.description }}</p>
+            <p v-else class="not-found">¯\_(ツ)_/¯</p>
             <p class="lang">
                 <span class="dot" :style="'background-color: '+colorsJSON[repoData.language]"></span>
                 {{ repoData.language }}
@@ -139,6 +140,11 @@
         font-size: 1.2em;
         display: inline-block;
         margin: 0 auto;
+    }
+    .not-found{
+        color: #555 !important;
+        margin-inline-end: 1%;
+        font-size: larger;
     }
     .desc{
         color: #f0f0f0 !important;
