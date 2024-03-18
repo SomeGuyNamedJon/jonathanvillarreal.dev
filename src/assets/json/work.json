@@ -1,5 +1,15 @@
 [
 {
+    "company":"Panasonic Avionics",
+    "logo":"panasonic.webp",
+    "imgALT":"Logo for Panasonic Avionics",
+    "startdt":"Jul 2023",
+    "enddt":"Current",
+    "location":"Irvine, CA",
+    "title":"Integration Test Engineer",
+    "duties":"Integrate software on test hardware and execute tests on that software for in-flight entertainment systems. Confirm reproducibility for bugs found and clearly dictate steps to produce them in reports. Collect and monitor logs to send diagnostic data to the software engineering team on any bugs found."
+},
+{
     "company":"UPS Warehouse",
     "logo":"UPS.webp",
     "imgALT":"Logo for United Parcel Service; the letters UPS on a sheild",
