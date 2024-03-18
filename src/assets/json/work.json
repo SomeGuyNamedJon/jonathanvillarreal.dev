@@ -12,7 +12,7 @@
 {
     "company":"UPS Warehouse",
     "logo":"UPS.webp",
-    "imgALT":"Logo for United Parcel Service; the letters UPS on a sheild",
+    "imgALT":"Logo for United Parcel Service",
     "startdt":"Jul 2020",
     "enddt":"Jan 2021",
     "location":"San Antonio, TX",
@@ -22,7 +22,7 @@
 {
     "company":"SeaWorld San Antonio",
     "logo":"seaworld.webp",
-    "imgALT":"Logo for SeaWorld San Antonio; abstract representation of a fin",
+    "imgALT":"Logo for SeaWorld San Antonio",
     "startdt":"Jun 2019",
     "enddt":"Aug 2019",
     "location":"San Antonio, TX",
@@ -32,7 +32,7 @@
 {
     "company":"Max Food Mart",
     "logo":"maxfoodmart.webp",
-    "imgALT":"Edited image of the shop's physical sign, this buisiness no longer exists, this was made by me by digitally tracing an image of the sign from Google maps",
+    "imgALT":"Logo for Max Food Mart",
     "startdt":"Dec 2017",
     "enddt":"Mar 2018",
     "location":"San Antonio, TX",
@@ -42,7 +42,7 @@
 {
     "company":"Bill Miller's BBQ",
     "logo":"billmillersbbq.webp",
-    "imgALT":"Logo for Bill Miller's BBQ; artisitic portraits of a cow, rooster, and pig over the resturant's name in cursive",
+    "imgALT":"Logo for Bill Miller's BBQ",
     "startdt":"Mar 2014",
     "enddt":"Aug 2014",
     "location":"San Antonio, TX",
@@ -52,7 +52,7 @@
 {
     "company":"Bolner's Fiesta Products",
     "logo":"bolnersfiesta.webp",
-    "imgALT":"Logo for Bolner's Fiesta Products; A woman in a dress and sombrero next to the company's name",
+    "imgALT":"Logo for Bolner's Fiesta Products",
     "startdt":"Feb 2014",
     "enddt":"Mar 2014",
     "location":"San Antonio, TX",
