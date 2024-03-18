@@ -18,6 +18,7 @@
                     repoData.value = response.data
                 }catch(err){
                     console.log(err)
+                    repoData.err = err
                     repoData.value = 'ERR'
                 }
             }
@@ -43,6 +44,10 @@
 </script>
 
 <template>
+<div v-if="repoData =='ERR'" class="card-err">
+    <h3>Oops, something went wrong...</h3>
+    <p>{{ repoData.err }}</p>
+</div>
 <Suspense>
     <template #default>
     <div>
