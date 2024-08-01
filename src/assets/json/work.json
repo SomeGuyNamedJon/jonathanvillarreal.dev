@@ -1,12 +1,12 @@
 [
 {
-    "company":"Panasonic Avionics",
+    "company":"Panasonic Avionics (Insight Global)",
     "logo":"panasonic.webp",
     "imgALT":"Logo for Panasonic Avionics",
     "startdt":"Jul 2023",
-    "enddt":" . . . ",
+    "enddt":"Jul 2024",
     "location":"Irvine, CA",
-    "title":"Integration Test Engineer",
+    "title":"Integration Test Engineer (Contractor)",
     "duties":"Integrate software on test hardware and execute tests on that software for in-flight entertainment systems. Confirm reproducibility for bugs found and clearly dictate steps to produce them in reports. Collect and monitor logs to send diagnostic data to the software engineering team on any bugs found."
 },
 {
